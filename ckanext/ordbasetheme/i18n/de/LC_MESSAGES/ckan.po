@@ -4858,100 +4858,100 @@ msgstr "suchen. erforschen. wiederverwenden."
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/group/snippets/group_item:23
 msgid "Number of Datasets:"
-msgstr ""
+msgstr "Anzahl Datensätze:"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/home/snippets/left:6
 msgid "All Datasets"
-msgstr ""
+msgstr "Alle Datensätze"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/home/snippets/left:10
 msgid "Most used Datasets"
-msgstr ""
+msgstr "Meistgenutzte Datensätze"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/home/snippets/left:14
 msgid "Last updated Datasets"
-msgstr ""
+msgstr "Zuletzt geänderte"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/home/snippets/right:6
 msgid "All Projects"
-msgstr ""
+msgstr "Alle Projekte"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/home/snippets/right:10
 msgid "Projects with more Datasets"
-msgstr ""
+msgstr "Projekte mit mehr Datensätzen"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/home/snippets/right:14
 msgid "Newest Projects"
-msgstr ""
+msgstr "Neuste Projekte"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/home/snippets/upper:7
 msgid "Datasets"
-msgstr ""
+msgstr "Datensätze"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/home/snippets/upper:8
 msgid "Projects"
-msgstr ""
+msgstr "Projekte"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/home/snippets/upper:18
 msgid "About"
-msgstr ""
+msgstr "Über uns"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/home/snippets/upper:19
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/home/snippets/upper:20
 msgid "Contact"
-msgstr ""
+msgstr "Kontakt"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/home/snippets/upper:37
 msgid "Most used tags: "
-msgstr ""
+msgstr "Häufigste Schlagworte:"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/footer:6
 msgid "About"
-msgstr ""
+msgstr "Über uns"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/footer:7
 msgid "Contact"
-msgstr ""
+msgstr "Kontakt"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/footer:12
 msgid "Source code on Github"
-msgstr ""
+msgstr "Quellcode auf Github"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/footer:13
 msgid "Developed with CKAN"
-msgstr ""
+msgstr "Entwickelt mit CKAN"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/footer:18
 msgid "CKAN API"
-msgstr ""
+msgstr "CKAN API"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/footer:19
 msgid "Open Knowledge"
-msgstr ""
+msgstr "Open Knowledge"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/footer:24
 msgid "Powered by"
-msgstr ""
+msgstr "Initiert von"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/footer:24
 msgid "in collaboration with"
-msgstr ""
+msgstr "in Zusammenarbeit mit"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/footer:24
 msgid "and"
-msgstr ""
+msgstr "und"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/footer:25
 msgid "Operated by"
-msgstr ""
+msgstr "Betrieben von"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/footer:26
 msgid "Mandated by"
-msgstr ""
+msgstr "Beauftragt von"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/header:17
 msgid "We are part of"
-msgstr ""
+msgstr "Wir sind Teil von"

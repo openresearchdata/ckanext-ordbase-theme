@@ -131,6 +131,11 @@ ul.tags li a.tag:hover {
 	margin-top: 24px;
 }
 
+.toolbar-title a {
+	text-decoration: none;
+}
+
+
 .toolbar-nav-right ul {
 	float: right;
 }
@@ -141,6 +146,7 @@ ul.tags li a.tag:hover {
 
 .toolbar-search .header__content-search {
 	margin-top: -10px;
+	width: 245px;
 	padding-bottom: 0px;
 }
 
@@ -335,16 +341,22 @@ ul.tags li a.tag:hover {
 	top: 11px;
 	right: 300px;
 	border: none;
-}
-
-.header__content-search {
-	padding-bottom: 20px;
+	margin-right: -335px;
 }
 
 .search-form {
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 	border-bottom: none;
+}
+
+.dataset-tags ul.tags {
+	list-style-type: none;
+}
+
+.dataset-tags ul.tags li {
+	float: left;
+	margin-right: 8px;
 }
 
 .header__content-tags ul,

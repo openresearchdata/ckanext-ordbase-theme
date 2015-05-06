@@ -4,3 +4,4 @@ ckan.mo
 build/
 dist/
 .DS_Store
+.idea/
