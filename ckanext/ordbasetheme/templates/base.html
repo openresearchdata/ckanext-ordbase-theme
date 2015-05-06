@@ -1,0 +1,13 @@
+{% ckan_extends %}
+
+{%- block title -%}
+  Open Social Sciences Data
+{%- endblock -%}
+
+{% block styles %}
+  {{ super() }}
+
+  {% resource 'ordbasetheme/css/normalize.css' %}
+  {% resource 'ordbasetheme/css/grid.css' %}
+  {% resource 'ordbasetheme/css/style.css' %}
+{% endblock %}

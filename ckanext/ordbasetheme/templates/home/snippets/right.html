@@ -1,0 +1,25 @@
+{% extends "home/snippets/tab-content.html" %}
+
+{% set suffix = 'right' %}
+
+{% block all_items_link %}
+  <a href="/group" class="button">{{ _('All Projects') }}</a>
+{% endblock %}
+
+{% block first_option_title %}
+  {{ _('Projects with more Datasets') }}
+{% endblock %}
+
+{% block second_option_title %}
+  {{ _('Newest Projects') }}
+{% endblock %}
+
+{% block first_option_items %}
+  {% set groups = h.get_biggest_groups(3) %}
+  {% snippet "group/snippets/group_list.html", groups=groups %}
+{% endblock %}
+
+{% block second_option_items %}
+  {% set groups = h.get_newest_groups(3) %}
+  {% snippet "group/snippets/group_list.html", groups=groups %}
+{% endblock %}

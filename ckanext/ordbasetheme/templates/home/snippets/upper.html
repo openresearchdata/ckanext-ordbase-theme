@@ -1,0 +1,51 @@
+{% block header_container_content %}
+  <div class="header__content">
+    <div class="container">
+      <div class="grid">
+        <div class="grid__col grid__col--1-of-3 header__content-topmenu">
+          <ul>
+            <li><a href="/dataset">{{ _('Datasets') }}</a></li>
+            <li><a href="/group">{{ _('Projects') }}</a></li>
+          </ul>
+        </div>
+        <div class="grid__col grid__col--1-of-3 logo-title">
+          <img src="images/logo2.png" alt="Logo">
+
+          <h1>Open Social Sciences Data</h1>
+        </div>
+        <div class="grid__col grid__col--1-of-3 header__content-metamenu">
+          <ul>
+            <li><a href="/pages/about">{{ _('About') }}</a></li>
+            <li><a href="/pages/faq">{{ _('FAQ') }}</a></li>
+            <li><a href="/pages/contact">{{ _('Contact') }}</a></li>
+          </ul>
+        </div>
+
+        <div class="container">
+          <div class="grid">
+            <div class="grid__col grid__col--4-of-5 grid__col--centered header__content-claim">
+              <p>{{ _('search. explore. reuse.') }}</p>
+              <form class="module-content search-form" method="get" action="{% url_for controller='package', action='search' %}">
+              <div class="header__content-search">
+                <input type="text" class="search" name="q" value="" autocomplete="off" placeholder="{{ _('Search') }}" />
+                <button type="submit">
+                  <i class="icon-search-big"></i>
+                </button>
+              </div>
+              </form>
+              <div class="header__content-tags">
+                <h3>{{ _('Most used tags:') }}</h3>
+                {% set tags = h.get_facet_items_dict('tags', limit=3) %}
+                <ul>
+                {% for tag in tags %}
+                  <li><a class="tag" href="{% url_for controller='package', action='search', tags=tag.name %}">{{ h.truncate(tag.display_name, 22) }}</a></li>
+                {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

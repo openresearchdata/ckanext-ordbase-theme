@@ -1,0 +1,22 @@
+<div class="data-menu" >
+  <ul>
+    <li class="first active"><a href="#first-option-{{ suffix }}" data-toggle="tab">{% block first_option_title %}{% endblock %}</a></li>
+    <li><a href="#second-option-{{ suffix }}" data-toggle="tab">{% block second_option_title %}{% endblock %}</a></li>
+  </ul>
+
+  {% block all_items_link %}{% endblock %}
+</div>
+
+<div class="tab-content">
+
+  <div class="tab-pane active" id="first-option-{{ suffix }}">
+    {% block first_option_items %}{% endblock %}
+  </div>
+
+  <div class="tab-pane" id="second-option-{{ suffix }}">
+    {% block second_option_items %}{% endblock %}
+  </div>
+
+</div>
+
+{% resource 'ordbasetheme/javascript/bootstrap-tab.js' %}

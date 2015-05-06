@@ -1,0 +1,25 @@
+{% block account_header %}
+  {% include "account_header.html" %}
+{% endblock %}
+
+{% block header_top %}
+  <div class="header__top">
+    <div class="container">
+      <div class="grid">
+        <div class="header__top-language">
+          <ul>
+            <li><a href="/en">en</a></li>
+            <li><a href="/de">de</a></li>
+            <li><a href="/fr">fr</a></li>
+          </ul>
+        </div>
+        <div class="header__top-link">
+          <p>{{ _('We are part of') }} <a href="http://openresearchdata.ch">openresearchdata.ch</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block header_logo %}
+{% endblock %}

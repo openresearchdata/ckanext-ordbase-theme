@@ -1,0 +1,27 @@
+{#
+Renders a media item for a group. This should be used in a list.
+
+group - A group dict.
+#}
+
+{% set type = group.type or 'group' %}
+{% set url = h.url_for(type ~ '_read', action='read', id=group.name) %}
+{% block item %}
+<div class="data-box">
+  {% block item_inner %}
+  {% block title %}
+    <h3 class="dataset-heading"><a href="{{ url }}" title="{{ _('View {name}').format(name=group.display_name) }}">
+      {{ group.display_name }}
+    </a></h3>
+  {% endblock %}
+  {% block datasets %}
+    {% if group.packages is number%}
+      {% set packages = group.packages %}
+    {% else %}
+      {% set packages = group.packages|count %}
+    {% endif %}
+    <p class="data-count">{{ _('Number of Datasets:') }} {{ packages }}</p>
+  {% endblock %}
+  {% endblock %}
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "home/snippets/tab-content.html" %}
+
+{% set suffix = 'left' %}
+
+{% block all_items_link %}
+  <a href="/dataset" class="button">{{ _('All Datasets') }}</a>
+{% endblock %}
+
+{% block first_option_title %}
+  {{ _('Most used Datasets') }}
+{% endblock %}
+
+{% block second_option_title %}
+  {{ _('Last updated Datasets') }}
+{% endblock %}
+
+{% block first_option_items %}
+  {% snippet "snippets/package_list.html", packages=h.get_popular_datasets(3) %}
+{% endblock %}
+
+{% block second_option_items %}
+  {% snippet "snippets/package_list.html", packages=h.get_newest_datasets(3) %}
+{% endblock %}

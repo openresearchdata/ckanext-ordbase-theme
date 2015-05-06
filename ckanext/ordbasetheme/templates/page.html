@@ -1,0 +1,61 @@
+{% ckan_extends %}
+
+{% block flash %}
+{% endblock %}
+
+{% block toolbar %}
+<div class="toolbar">
+  <div class="grid">
+    <div class="grid__col grid__col--1-of-4 header__content-topmenu toolbar-nav-left">
+      <ul>
+        <li><a href="/dataset">{{ _('Datasets') }}</a></li>
+        <li><a href="/group">{{ _('Projects') }}</a></li>
+      </ul>
+    </div>
+    <div class="grid__col grid__col--1-of-4 header__content-topmenu toolbar-title">
+      <img src="images/logo2.png" alt="Logo">
+
+      <h1>Open Social Sciences Data</h1>
+    </div>
+    <div class="grid__col grid__col--1-of-4 header__content-topmenu toolbar-search">
+      <form class="module-content search-form" method="get" action="{% url_for controller='package', action='search' %}">
+        <div class="header__content-search">
+          <input type="text" class="search" name="q" value="" autocomplete="off" placeholder="{{ _('Search') }}"/>
+          <button type="submit">
+            <i class="icon-search-big"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="grid__col grid__col--1-of-4 header__content-topmenu toolbar-nav-right">
+      <ul>
+        <li><a href="/pages/about">{{ _('About') }}</a></li>
+        <li><a href="/pages/faq">{{ _('FAQ') }}</a></li>
+        <li><a href="/pages/contact">{{ _('Contact') }}</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block pre_primary %}
+<aside class="secondary span3">
+  {#
+  The secondary_content block can be used to add content to the
+  sidebar of the page. This is the main block that is likely to be
+  used within a template.
+
+  Example:
+
+  {% block secondary_content %}
+  <h2>A sidebar item</h2>
+
+  <p>Some content for the item</p>
+  {% endblock %}
+  #}
+  {% block secondary_content %}{% endblock %}
+</aside>
+{% endblock %}
+
+{% block secondary %}
+{% endblock %}
