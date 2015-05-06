@@ -3,7 +3,7 @@
 {% set suffix = 'left' %}
 
 {% block all_items_link %}
-  <a href="/dataset" class="button">{{ _('All Datasets') }}</a>
+  <a href="{% url_for('search') %}" class="button">{{ _('All Datasets') }}</a>
 {% endblock %}
 
 {% block first_option_title %}

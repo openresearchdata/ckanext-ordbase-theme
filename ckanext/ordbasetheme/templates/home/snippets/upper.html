@@ -4,20 +4,22 @@
       <div class="grid">
         <div class="grid__col grid__col--1-of-3 header__content-topmenu">
           <ul>
-            <li><a href="/dataset">{{ _('Datasets') }}</a></li>
-            <li><a href="/group">{{ _('Projects') }}</a></li>
+            <li><a href="{% url_for('search') %}">{{ _('Datasets') }}</a></li>
+            <li><a href="{% url_for('group_index') %}">{{ _('Projects') }}</a></li>
           </ul>
         </div>
         <div class="grid__col grid__col--1-of-3 logo-title">
-          <img src="images/logo2.png" alt="Logo">
+          {% block logo_title %}
+            <img src="images/logo.png" alt="Logo">
 
-          <h1>Open Social Sciences Data</h1>
+            <h1>Open Social Sciences Data</h1>
+          {% endblock %}
         </div>
         <div class="grid__col grid__col--1-of-3 header__content-metamenu">
           <ul>
-            <li><a href="/pages/about">{{ _('About') }}</a></li>
-            <li><a href="/pages/faq">{{ _('FAQ') }}</a></li>
-            <li><a href="/pages/contact">{{ _('Contact') }}</a></li>
+            <li><a href="{% url_for('/pages/about') %}">{{ _('About') }}</a></li>
+            <li><a href="{% url_for('/pages/faq') %}">{{ _('FAQ') }}</a></li>
+            <li><a href="{% url_for('/pages/contact') %}">{{ _('Contact') }}</a></li>
           </ul>
         </div>
 

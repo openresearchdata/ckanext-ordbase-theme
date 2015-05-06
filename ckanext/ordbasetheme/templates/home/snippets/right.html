@@ -3,7 +3,7 @@
 {% set suffix = 'right' %}
 
 {% block all_items_link %}
-  <a href="/group" class="button">{{ _('All Projects') }}</a>
+  <a href="{% url_for('group_index') %}" class="button">{{ _('All Projects') }}</a>
 {% endblock %}
 
 {% block first_option_title %}

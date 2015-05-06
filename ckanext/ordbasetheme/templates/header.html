@@ -6,13 +6,16 @@
   <div class="header__top">
     <div class="container">
       <div class="grid">
-        <div class="header__top-language">
-          <ul>
-            <li><a href="/en">en</a></li>
-            <li><a href="/de">de</a></li>
-            <li><a href="/fr">fr</a></li>
-          </ul>
-        </div>
+        {% block header_top_language %}
+          {% set current_url = request.environ.CKAN_CURRENT_URL %}
+          <div class="header__top-language">
+            <ul>
+              <li><a href="/en{{ current_url }}">en</a></li>
+              <li><a href="/de{{ current_url }}">de</a></li>
+              <li><a href="/fr{{ current_url }}">fr</a></li>
+            </ul>
+          </div>
+        {% endblock %}
         <div class="header__top-link">
           <p>{{ _('We are part of') }} <a href="http://openresearchdata.ch">openresearchdata.ch</a></p>
         </div>
