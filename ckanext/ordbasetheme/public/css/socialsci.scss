@@ -9,6 +9,16 @@ $main-color-dark: #4a8fbe;
   color: $main-color;
 }
 
+.module-content .btn {
+  color: $main-color;
+}
+.module-content .btn-primary {
+  background-color: $main-color-dark;
+}
+.module-content .btn-primary:hover {
+  background-color: lighten($main-color-dark, 10%);
+}
+
 .tags ul.well li a.tag,
 ul.tags li a.tag {
   border-color: $main-color;
@@ -17,7 +27,6 @@ ul.tags li a.tag {
 .tags ul.well li a.tag:hover,
 ul.tags li a.tag:hover {
   background-color: $main-color-dark;
-  border-color: #235767;
 }
 
 /*****ACCOUNT HEADER*****/
@@ -31,25 +40,28 @@ ul.tags li a.tag:hover {
 
 .header__content-topmenu ul li,
 .header__content-metamenu ul li {
-  border-left: 2px solid $main-color-dark;
+  border-left-color: $main-color-dark;
 }
 
 .header__content-topmenu ul li:last-child,
 .header__content-metamenu ul li:last-child {
-  border-right: 2px solid $main-color-dark;
+  border-right-color: $main-color-dark;
 }
 
 .logo-title h1 {
   color: $main-color-dark;
 }
 
-.header__content-search input {
-  border: 2px solid $main-color-dark;
+.header__content .search-input.search-giant input {
+  border-color: $main-color-dark;
+}
+.header__content-topmenu .search-input.search-giant input {
+  border-color: $main-color-dark;
 }
 
 .header__content-tags ul li a,
 .content__data ul.tags li a {
-  border: 1px solid $main-color-dark;
+  border-color: $main-color-dark;
   color: $main-color-dark;
 }
 
@@ -59,7 +71,7 @@ ul.tags li a.tag:hover {
 }
 
 li.first {
-  border-right: 2px solid $main-color-dark;
+  border-right-color: $main-color-dark;
 }
 
 a.button {
@@ -67,18 +79,4 @@ a.button {
 }
 a.button:hover {
   background-color: lighten($main-color-dark, 10%);
-}
-
-.module-content .btn-primary {
-  background-color: $main-color-dark;
-}
-.module-content .btn-primary:hover {
-  background-color: lighten($main-color-dark, 10%);
-}
-
-.header__content .search-input.search-giant input {
-  border: 2px solid $main-color-dark;
-}
-.header__content-topmenu .search-input.search-giant input {
-  border: 2px solid $main-color-dark;
 }

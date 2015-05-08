@@ -92,7 +92,7 @@ ul.tags li a.tag {
 ul.tags li a.tag:hover {
   background-color: #75000d;
   color: #FFF;
-  border-color: #235767; }
+  border: none; }
 
 /*****ACCOUNT HEADER*****/
 .account-masthead {
