@@ -6,17 +6,17 @@
   <div class="header__top">
     <div class="container">
       <div class="grid">
-        {% if h.get_ordbasetheme_config('enable_language_nav') %}
+        <div class="grid__col grid__col--2-of-6 header__top-language">
+        {% if h.get_ordbasetheme_config('enable_language_nav') == 'true' %}
           {% set current_url = request.environ.CKAN_CURRENT_URL %}
-          <div class="header__top-language">
             <ul>
               <li><a href="/en{{ current_url }}">en</a></li>
               <li><a href="/de{{ current_url }}">de</a></li>
               <li><a href="/fr{{ current_url }}">fr</a></li>
             </ul>
-          </div>
         {% endif %}
-        <div class="header__top-link">
+        </div>
+        <div class="grid__col grid__col--2-of-6 header__top-link">
           <p>{{ _('We are part of') }} <a href="http://openresearchdata.ch">openresearchdata.ch</a></p>
         </div>
       </div>

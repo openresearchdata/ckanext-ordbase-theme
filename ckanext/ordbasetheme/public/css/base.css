@@ -164,20 +164,18 @@ ul.tags li a.tag:hover {
 .header__top {
   height: 32px;
   background-color: #303030; }
-
-.header__top-language {
-  margin-top: -16px; }
+  .header__top ul {
+    margin: 0; }
 
 .header__top-language ul {
-  list-style-type: none;
-  margin-left: 17px; }
+  overflow: hidden;
+  list-style-type: none; }
 
 .header__top-language ul li a {
   text-transform: uppercase;
   float: left;
-  padding: 0 5px;
-  margin: 8px 0;
-  margin-top: 12px;
+  margin-right: 10px;
+  line-height: 32px;
   color: #c4c3c5;
   font-size: 14px;
   text-decoration: none; }
@@ -188,18 +186,12 @@ ul.tags li a.tag:hover {
 .header__top-link {
   color: #fff;
   font-size: 14px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-  margin-top: -16px;
-  padding-left: 60px; }
+  text-align: center; }
 
 .header__top-link p {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 290px;
-  padding-top: 12px;
-  color: #c4c3c5; }
+  color: #c4c3c5;
+  line-height: 32px;
+  margin-bottom: 0; }
 
 .header__top-link a {
   color: #fff;
