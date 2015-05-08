@@ -1,5 +1,12 @@
 $main-color: #c10618;
 $main-color-dark: #75000d;
+$color-danger: #da4f49;
+$header-bg-color: #303030;
+$header-text-color: #c4c3c5;
+$toolbar-text-color: #434343;
+$data-text-color: #808184;
+$footer-bg-color: $header-bg-color;
+$footer-text-color: #a1a1a1;
 
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -76,13 +83,13 @@ body {
 }
 .module-content .btn-danger {
   color: #fff;
-  background-color: #da4f49;
+  background-color: $color-danger;
 }
 .module-content .btn-primary:hover {
   background-color: lighten($main-color-dark, 10%);
 }
 .module-content .btn-danger:hover {
-  background-color: lighten(#da4f49, 10%);
+  background-color: lighten($color-danger, 10%);
 }
 
 [role=main], .main {
@@ -192,7 +199,7 @@ ul.tags li a.tag:hover {
 /*****HEADER TOP*****/
 .header__top {
   height: 32px;
-  background-color: #303030;
+  background-color: $header-bg-color;
 }
 
 .header__top-language {
@@ -210,7 +217,7 @@ ul.tags li a.tag:hover {
   padding: 0 5px;
   margin: 8px 0;
   margin-top: 12px;
-  color: #c4c3c5;
+  color: $header-text-color;
   font-size: 14px;
   text-decoration: none;
 }
@@ -234,7 +241,7 @@ ul.tags li a.tag:hover {
   margin-right: auto;
   max-width: 290px;
   padding-top: 12px;
-  color: #c4c3c5;
+  color: $header-text-color;
 }
 
 .header__top-link a {
@@ -264,7 +271,7 @@ ul.tags li a.tag:hover {
   float: left;
   padding: 5px 12px;
   border-left: 2px solid $main-color-dark;
-  color: #434343;
+  color: $toolbar-text-color;
   font-size: 16px;
   font-weight: bold;
   margin-top: 20px;
@@ -272,7 +279,7 @@ ul.tags li a.tag:hover {
 
 .header__content-topmenu ul li a,
 .header__content-metamenu ul li a {
-  color: #434343;
+  color: $toolbar-text-color;
   text-decoration: none;
 }
 
@@ -288,7 +295,7 @@ ul.tags li a.tag:hover {
 
 .header__content h3 {
   margin: 0px;
-  color: #434343;
+  color: $toolbar-text-color;
   font-size: 17px;
   padding: 10px 10px 0px;
 }
@@ -380,7 +387,6 @@ ul.tags li a.tag:hover {
   border: 1px solid $main-color-dark;
   text-decoration: none;
   background-color: #FFF;
-  color: #06968a;
   color: $main-color-dark;
   padding: 2px 8px;
   font-size: 12px;
@@ -439,7 +445,7 @@ ul.tags li a.tag:hover {
 
 .content__data ul li a,
 .content__project ul li a {
-  color: #808184;
+  color: $data-text-color;
   text-decoration: none;
 }
 
@@ -497,7 +503,7 @@ a.button:hover {
 
 .data-box p.data-content {
   font-size: 14px;
-  color: #808184;
+  color: $data-text-color;
   border-top: 1px solid #e2e2e2;;
   padding: 8px 10px 10px 10px;
   margin-top: 10px;
@@ -506,7 +512,7 @@ a.button:hover {
 
 .data-box p.data-count {
   font-size: 12px;
-  color: #808184;
+  color: $data-text-color;
   text-align: right;
   padding-right: 10px;
   padding-bottom: 10px;
@@ -515,7 +521,7 @@ a.button:hover {
 /*****FOOTER*****/
 footer {
   min-height: 105px;
-  background-color: #303030;
+  background-color: $footer-bg-color;
 }
 
 footer .container {
@@ -547,7 +553,7 @@ footer .container {
 }
 
 .footer__text p {
-  color: #a1a1a1;
+  color: $footer-text-color;
   font-size: 14px;
   margin-bottom: 0px;
 }
