@@ -33,15 +33,17 @@
                 </button>
               </div>
               </form>
-              <div class="header__content-tags">
-                <h3>{{ _('Most used tags:') }}</h3>
-                {% set tags = h.get_facet_items_dict('tags', limit=3) %}
-                <ul>
-                {% for tag in tags %}
-                  <li><a class="tag" href="{% url_for controller='package', action='search', tags=tag.name %}">{{ h.truncate(tag.display_name, 22) }}</a></li>
-                {% endfor %}
-                </ul>
-              </div>
+              {% if h.get_ordbasetheme_config('theme') == 'socialsci' %}
+                <div class="header__content-tags">
+                  <h3>{{ _('Most used tags:') }}</h3>
+                  {% set tags = h.get_facet_items_dict('tags', limit=3) %}
+                  <ul>
+                  {% for tag in tags %}
+                    <li><a class="tag" href="{% url_for controller='package', action='search', tags=tag.name %}">{{ h.truncate(tag.display_name, 22) }}</a></li>
+                  {% endfor %}
+                  </ul>
+                </div>
+              {% endif %}
             </div>
           </div>
         </div>
