@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+from pylons import config
+
 import ckan.plugins as plugins
 import ckan.plugins.toolkit as tk
 
@@ -72,6 +74,13 @@ def get_newest_datasets(n):
         return datasets[::-1]
 
 
+def get_ordbasetheme_config(option):
+    # Get the value of the ckan.ordbasetheme.xy
+    # setting from the CKAN config file as a string, or False if the setting
+    # isn't in the config file.
+    return config.get('ckan.ordbasetheme.' + option, False)
+
+
 class OrdBaseThemePlugin(plugins.SingletonPlugin, tk.DefaultDatasetForm):
 
     plugins.implements(plugins.IConfigurer, inherit=False)
@@ -97,5 +106,6 @@ class OrdBaseThemePlugin(plugins.SingletonPlugin, tk.DefaultDatasetForm):
             'get_biggest_groups': get_biggest_groups,
             'get_newest_groups': get_newest_groups,
             'get_popular_datasets': get_popular_datasets,
-            'get_newest_datasets': get_newest_datasets
+            'get_newest_datasets': get_newest_datasets,
+            'get_ordbasetheme_config': get_ordbasetheme_config
         }
