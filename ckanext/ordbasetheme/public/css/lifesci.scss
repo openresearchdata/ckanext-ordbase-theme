@@ -1,0 +1,82 @@
+$main-color: #24B2A5;
+$main-color-dark: #06968a;
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: $main-color;
+}
+
+.module-content a {
+  color: $main-color;
+}
+
+.module-content .btn {
+  color: $main-color;
+}
+.module-content .btn-primary {
+  background-color: $main-color-dark;
+}
+.module-content .btn-primary:hover {
+  background-color: lighten($main-color-dark, 10%);
+}
+
+.tags ul.well li a.tag,
+ul.tags li a.tag {
+  border-color: $main-color;
+}
+
+.tags ul.well li a.tag:hover,
+ul.tags li a.tag:hover {
+  background-color: $main-color-dark;
+}
+
+/*****ACCOUNT HEADER*****/
+.account-masthead {
+  background-color: $main-color;
+}
+
+.toolbar-title h1 {
+  color: $main-color;
+}
+
+.header__content-topmenu ul li,
+.header__content-metamenu ul li {
+  border-left-color: $main-color-dark;
+}
+
+.header__content-topmenu ul li:last-child,
+.header__content-metamenu ul li:last-child {
+  border-right-color: $main-color-dark;
+}
+
+.logo-title h1 {
+  color: $main-color-dark;
+}
+
+.header__content .search-input.search-giant input {
+  border-color: $main-color-dark;
+}
+.header__content-topmenu .search-input.search-giant input {
+  border-color: $main-color-dark;
+}
+
+.header__content-tags ul li a,
+.content__data ul.tags li a {
+  border-color: $main-color-dark;
+  color: $main-color-dark;
+}
+
+.header__content-tags ul li a:hover,
+.content__data ul.tags li a:hover {
+  background-color: $main-color-dark;
+}
+
+li.first {
+  border-right-color: $main-color-dark;
+}
+
+a.button {
+  background-color: $main-color-dark;
+}
+a.button:hover {
+  background-color: lighten($main-color-dark, 10%);
+}

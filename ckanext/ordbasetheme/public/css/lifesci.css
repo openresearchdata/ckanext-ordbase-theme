@@ -1,0 +1,66 @@
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: #24B2A5; }
+
+.module-content a {
+  color: #24B2A5; }
+
+.module-content .btn {
+  color: #24B2A5; }
+
+.module-content .btn-primary {
+  background-color: #06968a; }
+
+.module-content .btn-primary:hover {
+  background-color: #08c7b7; }
+
+.tags ul.well li a.tag,
+ul.tags li a.tag {
+  border-color: #24B2A5; }
+
+.tags ul.well li a.tag:hover,
+ul.tags li a.tag:hover {
+  background-color: #06968a; }
+
+/*****ACCOUNT HEADER*****/
+.account-masthead {
+  background-color: #24B2A5; }
+
+.toolbar-title h1 {
+  color: #24B2A5; }
+
+.header__content-topmenu ul li,
+.header__content-metamenu ul li {
+  border-left-color: #06968a; }
+
+.header__content-topmenu ul li:last-child,
+.header__content-metamenu ul li:last-child {
+  border-right-color: #06968a; }
+
+.logo-title h1 {
+  color: #06968a; }
+
+.header__content .search-input.search-giant input {
+  border-color: #06968a; }
+
+.header__content-topmenu .search-input.search-giant input {
+  border-color: #06968a; }
+
+.header__content-tags ul li a,
+.content__data ul.tags li a {
+  border-color: #06968a;
+  color: #06968a; }
+
+.header__content-tags ul li a:hover,
+.content__data ul.tags li a:hover {
+  background-color: #06968a; }
+
+li.first {
+  border-right-color: #06968a; }
+
+a.button {
+  background-color: #06968a; }
+
+a.button:hover {
+  background-color: #08c7b7; }
+
+/*# sourceMappingURL=lifesci.css.map */
