@@ -8,7 +8,11 @@
   color: #24B2A5; }
 
 .module-content .btn-primary {
+  color: #ffffff;
   background-color: #06968a; }
+
+.module-content .btn-danger {
+  color: #ffffff; }
 
 .module-content .btn-primary:hover {
   background-color: #08c7b7; }

@@ -13,7 +13,11 @@ $main-color-dark: #06968a;
   color: $main-color;
 }
 .module-content .btn-primary {
+  color: #ffffff;
   background-color: $main-color-dark;
+}
+.module-content .btn-danger {
+  color: #ffffff;
 }
 .module-content .btn-primary:hover {
   background-color: lighten($main-color-dark, 10%);
