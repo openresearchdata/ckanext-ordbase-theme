@@ -82,9 +82,6 @@ class OrdBaseThemePlugin(plugins.SingletonPlugin, tk.DefaultDatasetForm):
         tk.add_public_directory(config, 'public')
         tk.add_resource('fanstatic', 'ordbasetheme')
 
-    def get_helpers(self):
-        return {}
-
     def is_fallback(self):
         # Return True to register this plugin as the default handler for
         # package types not handled by any other IDatasetForm plugin.

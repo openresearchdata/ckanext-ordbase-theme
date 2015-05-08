@@ -4861,7 +4861,7 @@ msgstr "Tous"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/home/snippets/left:10
 msgid "Most used Datasets"
-msgstr "Jeux de données le plus exploités"
+msgstr "Jeux de données les plus utilisés"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/home/snippets/left:14
 msgid "Last updated Datasets"
@@ -4941,7 +4941,7 @@ msgstr "et"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/footer:25
 msgid "Operated by"
-msgstr "Gèré par"
+msgstr "Géré par"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/footer:26
 msgid "Mandated by"

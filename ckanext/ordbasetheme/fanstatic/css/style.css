@@ -1,9 +1,18 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
 	font-family: Helvetia, sans-serif; /* 1 */
 	-ms-text-size-adjust: 100%; /* 2 */
 	-webkit-text-size-adjust: 100%; /* 2 */
 	background: none;
 	font-size: 16px;
+    min-width: 1024px;
 }
 
 .container {
@@ -49,8 +58,28 @@ body {
 	color: #fff;
 }
 
-.module-content a.btn-primary {
-	color: #fff;
+.module-content .btn {
+    color: #458fc1;
+    border: none;
+    box-shadow: none;
+    text-shadow: inherit;
+    background: none;
+    background-color: #F7F7F6;
+    font-weight: normal;
+}
+.module-content .btn-primary {
+    color: #fff;
+    background-color: #4a8fbe;
+}
+.module-content .btn-danger {
+    color: #fff;
+    background-color: #da4f49;
+}
+.module-content .btn-primary:hover {
+    background-color: #70A7CD;
+}
+.module-content .btn-danger:hover {
+    background-color: #ee5f5b;
 }
 
 [role=main], .main {
@@ -65,6 +94,7 @@ body {
 
 .tags ul.well li a.tag,
 ul.tags li a.tag {
+    font-size: 12px;
 	background-color: #fff;
 	border-color: #458fc1;
 }
@@ -118,10 +148,9 @@ ul.tags li a.tag:hover {
 
 .toolbar-title img {
 	float: left;
-	max-width: 14%;
-	margin-top: 5px;
+	margin-top: 15px;
 	margin-right: 12px;
-	margin-left: 25px;
+    height: 36px;
 }
 
 .toolbar-title h1 {
@@ -146,15 +175,15 @@ ul.tags li a.tag:hover {
 
 .toolbar-search .header__content-search {
 	margin-top: -10px;
-	width: 245px;
+	width: 100%;
 	padding-bottom: 0px;
 }
 
 .toolbar-search .header__content-search input {
 	height: 45px;
-	width: 320px;
+    width: 100%;
 	font-size: 16px;
-	margin-left: -65px;
+    padding-right: 50px;
 }
 
 /*****HEADER TOP*****/
@@ -223,6 +252,8 @@ ul.tags li a.tag:hover {
 
 .header__content-topmenu ul {
 	list-style-type: none;
+    overflow: hidden;
+    margin-left: 0;
 }
 
 .header__content-topmenu ul li,
@@ -293,55 +324,14 @@ ul.tags li a.tag:hover {
 	color: #434343;
 }
 
-.header__content-search {
-	padding-bottom: 20px;
-	height: 70px;
-	width: 580px;
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 40px;
+.header__content .search-input.search-giant input {
+    font-size: 22px;
+    border: 2px solid #4a8fbe;
+    padding: 15px 45px 15px 15px;
 }
-
-.header__content-search input {
-	height: 65px;
-	width: 540px;
-	padding: 0 20px;
-	font-size: 22px;
-	border: 2px solid #4a8fbe;
-	background-color: white;
-}
-
-.header__content-search button {
-	background-size: 100%;
-	content: '';
-	height: 38px;
-	width: 38px;
-	margin-top: 0px;
-	background-image: url("/images/search-icon.png");
-	background-repeat: no-repeat;
-	background-color: white;
-	position: absolute;
-	top: 18px;
-	right: 18px;
-	border: none;
-}
-
-.toolbar-search button {
-	background-size: 100%;
-	content: '';
-	height: 29px;
-	width: 29px;
-	margin-top: 0px;
-	background-image: url("/images/search-icon.png");
-	background-repeat: no-repeat;
-	background-color: white;
-	background-size: 30px;
-	position: absolute;
-	top: 11px;
-	right: 300px;
-	border: none;
-	margin-right: -335px;
+.header__content-topmenu .search-input.search-giant input {
+    border: 2px solid #4a8fbe;
+    padding: 10px 45px 10px 15px;
 }
 
 .search-form {
@@ -390,7 +380,7 @@ ul.tags li a.tag:hover {
 	color: #06968a;
 	color: #4a8fbe;
 	padding: 2px 8px;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: normal;
 	border-radius: 10px;
 	display: inline;
@@ -521,18 +511,18 @@ a.button:hover {
 
 /*****FOOTER*****/
 footer {
-	height: 105px;
+	min-height: 105px;
 	background-color: #303030;
+}
+
+footer .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .footer__links ul {
 	list-style-type: none;
-	margin-top: 30px;
-}
-
-.footer-middle {
-	padding-left: 0px;
-	margin-left: 0px;
+    margin-left: 0;
 }
 
 .footer__links ul li,
@@ -547,13 +537,10 @@ footer {
 	text-decoration: underline;
 }
 
-.footer__text {
-	margin-top: 22px;
-}
-
 .footer__text ul {
 	list-style-type: none;
-	margin-left: 365px;
+    text-align: right;
+    margin-left: 0;
 }
 
 .footer__text p {

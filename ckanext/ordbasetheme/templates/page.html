@@ -13,15 +13,15 @@
       </ul>
     </div>
     <div class="grid__col grid__col--1-of-4 header__content-topmenu toolbar-title">
-      <a href="/"><img src="/images/logo2.png" alt="Logo">
-      <h1>Open Social Sciences Data</h1></a>
+      <a href="/"><img src="{{ app_globals.site_logo }}" alt="Logo">
+      <h1>{{ app_globals.site_title }}</h1></a>
     </div>
     <div class="grid__col grid__col--1-of-4 header__content-topmenu toolbar-search">
       <form class="module-content search-form" method="get" action="{% url_for controller='package', action='search' %}">
-        <div class="header__content-search">
+        <div class="search-input control-group search-giant">
           <input type="text" class="search" name="q" value="" autocomplete="off" placeholder="{{ _('Search') }}"/>
-          <button type="submit">
-            <i class="icon-search-big"></i>
+          <button type="submit" value="search">
+            <i class="icon-search"></i>
           </button>
         </div>
       </form>
