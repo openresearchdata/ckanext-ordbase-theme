@@ -131,7 +131,8 @@ ul.tags li a.tag:hover {
 
 /*****TOOLBAR*****/
 .toolbar-title {
-  padding-left: 0px !important; }
+  padding-left: 0px !important;
+  overflow: hidden; }
 
 .toolbar-title img {
   float: left;
@@ -140,6 +141,7 @@ ul.tags li a.tag:hover {
   height: 36px; }
 
 .toolbar-title h1 {
+  float: left;
   font-size: 16px;
   font-weight: bold;
   color: #ffffff;
@@ -167,7 +169,7 @@ ul.tags li a.tag:hover {
 
 /*****HEADER TOP*****/
 .header__top {
-  height: 32px;
+  min-height: 32px;
   background-color: #303030; }
   .header__top ul {
     margin: 0; }
