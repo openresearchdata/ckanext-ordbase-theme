@@ -40,14 +40,14 @@ body {
   border-right: 1px solid #ccc; }
 
 .nav > li > a:hover, .nav > li > a:focus {
-  background-color: #dc1a00; }
+  background-color: #a91400; }
 
 .module-content a {
   color: #C21700; }
 
 .module-content a:hover,
 .module-content a:focus {
-  color: #dc1a00; }
+  color: #a91400; }
 
 .module-content a.dropdown-toggle {
   color: #fff; }
@@ -74,11 +74,11 @@ body {
 
 .module-content .btn-primary:hover {
   color: #ffffff;
-  background-color: #dc1a00; }
+  background-color: #a91400; }
 
 .module-content .btn-danger:hover {
   color: #ffffff;
-  background-color: #de635e; }
+  background-color: #a91400; }
 
 [role=main], .main {
   background-image: url("/images/pattern1.jpg");
@@ -96,7 +96,7 @@ ul.tags li a.tag {
 
 .tags ul.well li a.tag:hover,
 ul.tags li a.tag:hover {
-  background-color: #dc1a00;
+  background-color: #a91400;
   color: #FFF;
   border: none; }
 
@@ -338,7 +338,7 @@ ul.tags li a.tag:hover {
 
 .header__content-tags ul li a:hover,
 .content__data ul.tags li a:hover {
-  background-color: #dc1a00;
+  background-color: #a91400;
   color: #FFF; }
 
 /*****CONTENT*****/
@@ -394,7 +394,7 @@ a.button {
   font-width: bold; }
 
 a.button:hover {
-  background-color: #dc1a00; }
+  background-color: #a91400; }
 
 .data-menu a.button {
   display: inline;

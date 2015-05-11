@@ -1,5 +1,5 @@
 $link-color: #C21700;
-$hover-color: lighten($link-color, 5%);
+$hover-color: darken($link-color, 5%);
 $brand-color: #ffffff;
 $color-danger: #da4f49;
 $header-bg-color: #303030;
@@ -96,7 +96,7 @@ body {
 }
 .module-content .btn-danger:hover {
   color: #ffffff;
-  background-color: lighten($color-danger, 5%);
+  background-color: darken($link-color, 5%);;
 }
 
 [role=main], .main {
