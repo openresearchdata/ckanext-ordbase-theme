@@ -1,5 +1,6 @@
-$main-color: #c10618;
-$main-color-dark: #75000d;
+$link-color: #C3291D;
+$hover-color: #a8281a;
+$brand-color: #ffffff;
 $color-danger: #da4f49;
 $header-bg-color: #303030;
 $header-text-color: #c4c3c5;
@@ -53,11 +54,15 @@ body {
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
-  background-color: $main-color;
+  background-color: $hover-color;
 }
 
 .module-content a {
-  color: $main-color;
+  color: $link-color;
+}
+.module-content a:hover,
+.module-content a:focus {
+  color: $hover-color;
 }
 
 .module-content a.dropdown-toggle {
@@ -69,7 +74,7 @@ body {
 }
 
 .module-content .btn {
-  color: $main-color;
+  color: $link-color;
   border: none;
   box-shadow: none;
   text-shadow: inherit;
@@ -78,18 +83,20 @@ body {
   font-weight: normal;
 }
 .module-content .btn-primary {
-  color: #fff;
-  background-color: $main-color-dark;
+  color: #ffffff;
+  background-color: $link-color;
 }
 .module-content .btn-danger {
-  color: #fff;
+  color: #ffffff;
   background-color: $color-danger;
 }
 .module-content .btn-primary:hover {
-  background-color: lighten($main-color-dark, 10%);
+  color: #ffffff;
+  background-color: $hover-color;
 }
 .module-content .btn-danger:hover {
-  background-color: lighten($color-danger, 10%);
+  color: #ffffff;
+  background-color: lighten($color-danger, 5%);
 }
 
 [role=main], .main {
@@ -106,12 +113,12 @@ body {
 ul.tags li a.tag {
   font-size: 12px;
   background-color: #fff;
-  border-color: $main-color;
+  border-color: $link-color;
 }
 
 .tags ul.well li a.tag:hover,
 ul.tags li a.tag:hover {
-  background-color: $main-color-dark;
+  background-color: $hover-color;
   color: #FFF;
   border: none;
 }
@@ -124,7 +131,7 @@ ul.tags li a.tag:hover {
   line-height: 20px;
   margin-left: 0px;
   margin-right: 0px;
-  background-color: $main-color;
+  background-color: $brand-color;
 }
 
 .account-masthead .account ul li {
@@ -166,7 +173,7 @@ ul.tags li a.tag:hover {
 .toolbar-title h1 {
   font-size: 16px;
   font-weight: bold;
-  color: $main-color;
+  color: $brand-color;
   margin-top: 24px;
 }
 
@@ -263,7 +270,7 @@ ul.tags li a.tag:hover {
 .header__content-metamenu ul li {
   float: left;
   padding: 5px 12px;
-  border-left: 2px solid $main-color-dark;
+  border-left: 2px solid $brand-color;
   color: $toolbar-text-color;
   font-size: 16px;
   font-weight: bold;
@@ -283,7 +290,7 @@ ul.tags li a.tag:hover {
 
 .header__content-topmenu ul li:last-child,
 .header__content-metamenu ul li:last-child {
-  border-right: 2px solid $main-color-dark;
+  border-right: 2px solid $brand-color;
 }
 
 .header__content h3 {
@@ -305,7 +312,7 @@ ul.tags li a.tag:hover {
 }
 
 .logo-title h1 {
-  color: $main-color-dark;
+  color: $brand-color;
   margin-top: 10px;
   margin-bottom: 0px;
   font-weight: normal;
@@ -329,11 +336,11 @@ ul.tags li a.tag:hover {
 
 .header__content .search-input.search-giant input {
   font-size: 22px;
-  border: 2px solid $main-color-dark;
+  border: 2px solid $brand-color;
   padding: 15px 45px 15px 15px;
 }
 .header__content-topmenu .search-input.search-giant input {
-  border: 2px solid $main-color-dark;
+  border: 2px solid $brand-color;
   padding: 10px 45px 10px 15px;
 }
 
@@ -377,10 +384,10 @@ ul.tags li a.tag:hover {
 
 .header__content-tags ul li a,
 .content__data ul.tags li a {
-  border: 1px solid $main-color-dark;
+  border: 1px solid $link-color;
   text-decoration: none;
   background-color: #FFF;
-  color: $main-color-dark;
+  color: $link-color;
   padding: 2px 8px;
   font-size: 12px;
   font-weight: normal;
@@ -390,7 +397,7 @@ ul.tags li a.tag:hover {
 
 .header__content-tags ul li a:hover,
 .content__data ul.tags li a:hover {
-  background-color: $main-color-dark;
+  background-color: $hover-color;
   color: #FFF;
 }
 
@@ -443,13 +450,13 @@ ul.tags li a.tag:hover {
 }
 
 li.first {
-  border-right: 2px solid $main-color-dark;
+  border-right: 2px solid $link-color;
 }
 
 a.button {
   color: #fff;
   padding: 10px 15px;
-  background-color: $main-color-dark;
+  background-color: $link-color;
   border-radius: 4px;
   text-decoration: none;
   float: right;
@@ -457,7 +464,7 @@ a.button {
 }
 
 a.button:hover {
-  background-color: lighten($main-color-dark, 10%);
+  background-color: $hover-color;
 }
 
 .data-menu a.button {

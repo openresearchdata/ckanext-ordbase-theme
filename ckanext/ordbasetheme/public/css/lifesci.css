@@ -1,70 +1,75 @@
 .nav > li > a:hover, .nav > li > a:focus {
-  background-color: #24B2A5; }
+  background-color: #067d72; }
 
 .module-content a {
-  color: #24B2A5; }
+  color: #06968A; }
+
+.module-content a:hover,
+.module-content a:focus {
+  color: #067d72; }
 
 .module-content .btn {
-  color: #24B2A5; }
+  color: #06968A; }
 
 .module-content .btn-primary {
   color: #ffffff;
-  background-color: #06968a; }
+  background-color: #06968A; }
 
 .module-content .btn-danger {
   color: #ffffff; }
 
 .module-content .btn-primary:hover {
-  background-color: #08c7b7; }
+  color: #ffffff;
+  background-color: #067d72; }
 
 .tags ul.well li a.tag,
 ul.tags li a.tag {
-  border-color: #24B2A5; }
+  border-color: #06968A; }
 
 .tags ul.well li a.tag:hover,
 ul.tags li a.tag:hover {
-  background-color: #06968a; }
+  background-color: #067d72; }
 
 /*****ACCOUNT HEADER*****/
 .account-masthead {
-  background-color: #24B2A5; }
+  background-color: #06968A; }
 
 .toolbar-title h1 {
-  color: #24B2A5; }
+  color: #06968A; }
 
 .header__content-topmenu ul li,
 .header__content-metamenu ul li {
-  border-left-color: #06968a; }
+  border-left-color: #06968A; }
 
 .header__content-topmenu ul li:last-child,
 .header__content-metamenu ul li:last-child {
-  border-right-color: #06968a; }
+  border-right-color: #06968A; }
 
 .logo-title h1 {
-  color: #06968a; }
+  color: #06968A; }
 
 .header__content .search-input.search-giant input {
-  border-color: #06968a; }
+  border-color: #06968A; }
 
 .header__content-topmenu .search-input.search-giant input {
-  border-color: #06968a; }
+  border-color: #06968A; }
 
 .header__content-tags ul li a,
 .content__data ul.tags li a {
-  border-color: #06968a;
-  color: #06968a; }
+  border-color: #06968A;
+  color: #06968A; }
 
 .header__content-tags ul li a:hover,
 .content__data ul.tags li a:hover {
-  background-color: #06968a; }
+  background-color: #067d72; }
 
 li.first {
-  border-right-color: #06968a; }
+  border-right-color: #06968A; }
 
 a.button {
-  background-color: #06968a; }
+  background-color: #06968A; }
 
 a.button:hover {
-  background-color: #08c7b7; }
+  background-color: #067d72; }
 
 /*# sourceMappingURL=lifesci.css.map */
