@@ -1,5 +1,5 @@
 $link-color: #C3291D;
-$hover-color: #a8281a;
+$hover-color: lighten($link-color, 10%);
 $brand-color: #ffffff;
 $color-danger: #da4f49;
 $header-bg-color: #303030;
@@ -252,6 +252,19 @@ ul.tags li a.tag:hover {
 .header__top-link a:hover {
   text-decoration: none;
 }
+
+.header__top-mandated p {
+  color: #ffffff;
+  line-height: 32px;
+  margin-bottom: 0;
+  font-size: 14px;
+  text-align: right;
+}
+.header__top-mandated p img {
+  margin-left: 5px;
+  height: 16px;
+}
+
 
 /*****HEADER CONTENT*****/
 .header__content {

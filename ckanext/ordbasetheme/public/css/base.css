@@ -40,14 +40,14 @@ body {
   border-right: 1px solid #ccc; }
 
 .nav > li > a:hover, .nav > li > a:focus {
-  background-color: #a8281a; }
+  background-color: #e13f32; }
 
 .module-content a {
   color: #C3291D; }
 
 .module-content a:hover,
 .module-content a:focus {
-  color: #a8281a; }
+  color: #e13f32; }
 
 .module-content a.dropdown-toggle {
   color: #fff; }
@@ -74,7 +74,7 @@ body {
 
 .module-content .btn-primary:hover {
   color: #ffffff;
-  background-color: #a8281a; }
+  background-color: #e13f32; }
 
 .module-content .btn-danger:hover {
   color: #ffffff;
@@ -96,7 +96,7 @@ ul.tags li a.tag {
 
 .tags ul.well li a.tag:hover,
 ul.tags li a.tag:hover {
-  background-color: #a8281a;
+  background-color: #e13f32;
   color: #FFF;
   border: none; }
 
@@ -205,6 +205,17 @@ ul.tags li a.tag:hover {
 
 .header__top-link a:hover {
   text-decoration: none; }
+
+.header__top-mandated p {
+  color: #ffffff;
+  line-height: 32px;
+  margin-bottom: 0;
+  font-size: 14px;
+  text-align: right; }
+
+.header__top-mandated p img {
+  margin-left: 5px;
+  height: 16px; }
 
 /*****HEADER CONTENT*****/
 .header__content {
@@ -328,7 +339,7 @@ ul.tags li a.tag:hover {
 
 .header__content-tags ul li a:hover,
 .content__data ul.tags li a:hover {
-  background-color: #a8281a;
+  background-color: #e13f32;
   color: #FFF; }
 
 /*****CONTENT*****/
@@ -384,7 +395,7 @@ a.button {
   font-width: bold; }
 
 a.button:hover {
-  background-color: #a8281a; }
+  background-color: #e13f32; }
 
 .data-menu a.button {
   display: inline;

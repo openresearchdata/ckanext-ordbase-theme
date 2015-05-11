@@ -17,7 +17,14 @@
         {% endif %}
         </div>
         <div class="grid__col grid__col--2-of-6 header__top-link">
+        {% if h.get_ordbasetheme_config('theme') != 'ordplatform' %}
           <p>{{ _('We are part of') }} <a href="http://openresearchdata.ch">openresearchdata.ch</a></p>
+        {% endif %}
+        </div>
+        <div class="grid__col grid__col--2-of-6 header__top-mandated">
+          {% if h.get_ordbasetheme_config('theme') == 'ordplatform' %}
+            <p>{{ _('Mandated by') }} <a href="http://www.swissuniversities.ch/isci"><img src="/images/footer-logo.png"></a></p>
+          {% endif %}
         </div>
       </div>
     </div>

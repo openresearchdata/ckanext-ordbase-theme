@@ -1,75 +1,75 @@
 .nav > li > a:hover, .nav > li > a:focus {
-  background-color: #3f7ea9; }
+  background-color: #35749e; }
 
 .module-content a {
-  color: #4a8fbe; }
+  color: #458FC1; }
 
 .module-content a:hover,
 .module-content a:focus {
-  color: #3f7ea9; }
+  color: #35749e; }
 
 .module-content .btn {
-  color: #4a8fbe; }
+  color: #458FC1; }
 
 .module-content .btn-primary {
   color: #ffffff;
-  background-color: #4a8fbe; }
+  background-color: #458FC1; }
 
 .module-content .btn-danger {
   color: #ffffff; }
 
 .module-content .btn-primary:hover {
   color: #ffffff;
-  background-color: #3f7ea9; }
+  background-color: #35749e; }
 
 .tags ul.well li a.tag,
 ul.tags li a.tag {
-  border-color: #4a8fbe; }
+  border-color: #458FC1; }
 
 .tags ul.well li a.tag:hover,
 ul.tags li a.tag:hover {
-  background-color: #3f7ea9; }
+  background-color: #35749e; }
 
 /*****ACCOUNT HEADER*****/
 .account-masthead {
-  background-color: #458fc1; }
+  background-color: #458FC1; }
 
 .toolbar-title h1 {
-  color: #458fc1; }
+  color: #458FC1; }
 
 .header__content-topmenu ul li,
 .header__content-metamenu ul li {
-  border-left-color: #458fc1; }
+  border-left-color: #458FC1; }
 
 .header__content-topmenu ul li:last-child,
 .header__content-metamenu ul li:last-child {
-  border-right-color: #458fc1; }
+  border-right-color: #458FC1; }
 
 .logo-title h1 {
-  color: #458fc1; }
+  color: #458FC1; }
 
 .header__content .search-input.search-giant input {
-  border-color: #458fc1; }
+  border-color: #458FC1; }
 
 .header__content-topmenu .search-input.search-giant input {
-  border-color: #458fc1; }
+  border-color: #458FC1; }
 
 .header__content-tags ul li a,
 .content__data ul.tags li a {
-  border-color: #4a8fbe;
-  color: #4a8fbe; }
+  border-color: #458FC1;
+  color: #458FC1; }
 
 .header__content-tags ul li a:hover,
 .content__data ul.tags li a:hover {
-  background-color: #3f7ea9; }
+  background-color: #35749e; }
 
 li.first {
-  border-right-color: #4a8fbe; }
+  border-right-color: #458FC1; }
 
 a.button {
-  background-color: #4a8fbe; }
+  background-color: #458FC1; }
 
 a.button:hover {
-  background-color: #3f7ea9; }
+  background-color: #35749e; }
 
 /*# sourceMappingURL=socialsci.css.map */

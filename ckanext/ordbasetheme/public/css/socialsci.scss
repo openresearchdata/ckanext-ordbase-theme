@@ -1,6 +1,6 @@
-$link-color: #4a8fbe;
-$hover-color: #3f7ea9;
-$brand-color: #458fc1;
+$link-color: #458FC1;
+$hover-color: darken($link-color, 10%);
+$brand-color: $link-color;
 
 .nav > li > a:hover, .nav > li > a:focus {
   background-color: $hover-color;
