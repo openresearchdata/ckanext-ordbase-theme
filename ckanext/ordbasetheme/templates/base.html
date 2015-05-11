@@ -11,12 +11,14 @@
   <link rel="stylesheet" href="/css/grid.css" />
   <link rel="stylesheet" href="/css/base.css" />
 
-  {% if h.get_ordbasetheme_config('theme') == 'socialsci' %}
+  {% if h.get_ordbasetheme_config('theme') == 'ordplatform' %}
+    <link rel="stylesheet" href="/css/ordplatform.css" />
+  {% elif h.get_ordbasetheme_config('theme') == 'socialsci' %}
     <link rel="stylesheet" href="/css/socialsci.css" />
   {% elif h.get_ordbasetheme_config('theme') == 'lifesci' %}
     <link rel="stylesheet" href="/css/lifesci.css" />
-  {% elif h.get_ordbasetheme_config('theme') == 'ordplatform' %}
-    <link rel="stylesheet" href="/css/ordplatform.css" />
+  {% elif h.get_ordbasetheme_config('theme') == 'humanities' %}
+    <link rel="stylesheet" href="/css/humanities.css" />
   {% endif %}
 {% endblock %}
 

@@ -25,6 +25,8 @@
             <li><p>{{ _('Powered by') }} <a href="http://forscenter.ch">FORS</a>, {{ _('in collaboration with') }} <a href="https://www1.ethz.ch/id/about/sections/sis">ETH SIS</a> {{ _('and') }} <a href="http://www.dhlab.unibas.ch">DHLab</a></p></li>
           {% elif h.get_ordbasetheme_config('theme') == 'lifesci' %}
             <li><p>{{ _('Powered by') }} <a href="https://www1.ethz.ch/id/about/sections/sis">ETH SIS</a>, a <a href="http://www.isb-sib.ch">SIB group</a>, {{ _('in collaboration with') }} <a href="http://forscenter.ch">FORS</a> {{ _('and') }} <a href="http://www.dhlab.unibas.ch">DHLab</a></p></li>
+          {% elif h.get_ordbasetheme_config('theme') == 'humanities' %}
+            <li><p>{{ _('Powered by') }} <a href="http://www.dhlab.unibas.ch">DHLab</a>, {{ _('in collaboration with') }} <a href="https://www1.ethz.ch/id/about/sections/sis">ETH SIS</a> {{ _('and') }} <a href="http://forscenter.ch">FORS</a></p></li>
           {% endif %}
           <li><p class="footer-operated">{{ _('Operated by') }} <a href="http://ethz.ch">ETH Zürich</a></p></li>
           <li><p class="footer-mandated">{{ _('Mandated by') }} <a href="http://www.swissuniversities.ch/isci"><img src="/images/footer-logo.png"></a></p></li>

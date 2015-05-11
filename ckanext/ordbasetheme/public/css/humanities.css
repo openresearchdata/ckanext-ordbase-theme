@@ -1,0 +1,75 @@
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: #c78700; }
+
+.module-content a {
+  color: #E09800; }
+
+.module-content a:hover,
+.module-content a:focus {
+  color: #c78700; }
+
+.module-content .btn {
+  color: #E09800; }
+
+.module-content .btn-primary {
+  color: #ffffff;
+  background-color: #E09800; }
+
+.module-content .btn-danger {
+  color: #ffffff; }
+
+.module-content .btn-primary:hover {
+  color: #ffffff;
+  background-color: #c78700; }
+
+.tags ul.well li a.tag,
+ul.tags li a.tag {
+  border-color: #E09800; }
+
+.tags ul.well li a.tag:hover,
+ul.tags li a.tag:hover {
+  background-color: #c78700; }
+
+/*****ACCOUNT HEADER*****/
+.account-masthead {
+  background-color: #E09800; }
+
+.toolbar-title h1 {
+  color: #E09800; }
+
+.header__content-topmenu ul li,
+.header__content-metamenu ul li {
+  border-left-color: #E09800; }
+
+.header__content-topmenu ul li:last-child,
+.header__content-metamenu ul li:last-child {
+  border-right-color: #E09800; }
+
+.logo-title h1 {
+  color: #E09800; }
+
+.header__content .search-input.search-giant input {
+  border-color: #E09800; }
+
+.header__content-topmenu .search-input.search-giant input {
+  border-color: #E09800; }
+
+.header__content-tags ul li a,
+.content__data ul.tags li a {
+  border-color: #E09800;
+  color: #E09800; }
+
+.header__content-tags ul li a:hover,
+.content__data ul.tags li a:hover {
+  background-color: #c78700; }
+
+li.first {
+  border-right-color: #E09800; }
+
+a.button {
+  background-color: #E09800; }
+
+a.button:hover {
+  background-color: #c78700; }
+
+/*# sourceMappingURL=humanities.css.map */

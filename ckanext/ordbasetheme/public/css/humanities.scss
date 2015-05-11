@@ -1,0 +1,92 @@
+$link-color: #E09800;
+$hover-color: darken($link-color, 5%);
+$brand-color: $link-color;
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: $hover-color;
+}
+
+.module-content a {
+  color: $link-color;
+}
+.module-content a:hover,
+.module-content a:focus {
+  color: $hover-color;
+}
+
+.module-content .btn {
+  color: $link-color;
+}
+.module-content .btn-primary {
+  color: #ffffff;
+  background-color: $link-color;
+}
+.module-content .btn-danger {
+  color: #ffffff;
+}
+.module-content .btn-primary:hover {
+  color: #ffffff;
+  background-color: $hover-color;
+}
+
+.tags ul.well li a.tag,
+ul.tags li a.tag {
+  border-color: $link-color;
+}
+
+.tags ul.well li a.tag:hover,
+ul.tags li a.tag:hover {
+  background-color: $hover-color;
+}
+
+/*****ACCOUNT HEADER*****/
+.account-masthead {
+  background-color: $brand-color;
+}
+
+.toolbar-title h1 {
+  color: $brand-color;
+}
+
+.header__content-topmenu ul li,
+.header__content-metamenu ul li {
+  border-left-color: $brand-color;
+}
+
+.header__content-topmenu ul li:last-child,
+.header__content-metamenu ul li:last-child {
+  border-right-color: $brand-color;
+}
+
+.logo-title h1 {
+  color: $brand-color;
+}
+
+.header__content .search-input.search-giant input {
+  border-color: $brand-color;
+}
+.header__content-topmenu .search-input.search-giant input {
+  border-color: $brand-color;
+}
+
+.header__content-tags ul li a,
+.content__data ul.tags li a {
+  border-color: $link-color;
+  color: $link-color;
+}
+
+.header__content-tags ul li a:hover,
+.content__data ul.tags li a:hover {
+  background-color: $hover-color;
+}
+
+li.first {
+  border-right-color: $link-color;
+}
+
+a.button {
+  background-color: $link-color;
+}
+a.button:hover {
+  background-color: $hover-color;
+}
