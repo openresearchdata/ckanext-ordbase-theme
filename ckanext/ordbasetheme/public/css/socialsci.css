@@ -37,6 +37,9 @@ ul.tags li a.tag:hover {
 .toolbar-title h1 {
   color: #458FC1; }
 
+.header__content-topmenu .search-input input {
+  border-color: #458FC1; }
+
 .header__content-topmenu ul li,
 .header__content-metamenu ul li {
   border-left-color: #458FC1; }
@@ -49,9 +52,6 @@ ul.tags li a.tag:hover {
   color: #458FC1; }
 
 .header__content .search-input.search-giant input {
-  border-color: #458FC1; }
-
-.header__content-topmenu .search-input.search-giant input {
   border-color: #458FC1; }
 
 .header__content-tags ul li a,

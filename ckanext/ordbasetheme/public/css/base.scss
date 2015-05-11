@@ -191,17 +191,9 @@ ul.tags li a.tag:hover {
   margin-left: 0px;
 }
 
-.toolbar-search .header__content-search {
-  margin-top: -10px;
-  width: 100%;
-  padding-bottom: 0px;
-}
-
-.toolbar-search .header__content-search input {
-  height: 45px;
-  width: 100%;
-  font-size: 16px;
-  padding-right: 50px;
+.header__content-topmenu .search-input input {
+  border: 2px solid $brand-color;
+  padding: 4px 25px 4px 6px;
 }
 
 /*****HEADER TOP*****/
@@ -352,10 +344,6 @@ ul.tags li a.tag:hover {
   font-size: 22px;
   border: 2px solid $brand-color;
   padding: 15px 45px 15px 15px;
-}
-.header__content-topmenu .search-input.search-giant input {
-  border: 2px solid $brand-color;
-  padding: 10px 45px 10px 15px;
 }
 
 .search-form {
