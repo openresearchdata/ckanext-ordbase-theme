@@ -1,0 +1,27 @@
+$toolbar-text-color: #ffffff;
+
+[role=main], .main {
+  background-image: url("/images/pattern2.jpg");
+}
+.header__content {
+  background-image: url("/images/pattern2.jpg");
+}
+
+.header__content-claim p {
+  color: $toolbar-text-color;
+}
+
+.header__content-topmenu ul li,
+.header__content-metamenu ul li {
+  color: $toolbar-text-color;
+  font-weight: normal;
+}
+
+.header__content-topmenu ul li a,
+.header__content-metamenu ul li a {
+  color: $toolbar-text-color;
+}
+
+.header__content h3 {
+  color: $toolbar-text-color;
+}

@@ -1,0 +1,22 @@
+[role=main], .main {
+  background-image: url("/images/pattern2.jpg"); }
+
+.header__content {
+  background-image: url("/images/pattern2.jpg"); }
+
+.header__content-claim p {
+  color: #ffffff; }
+
+.header__content-topmenu ul li,
+.header__content-metamenu ul li {
+  color: #ffffff;
+  font-weight: normal; }
+
+.header__content-topmenu ul li a,
+.header__content-metamenu ul li a {
+  color: #ffffff; }
+
+.header__content h3 {
+  color: #ffffff; }
+
+/*# sourceMappingURL=ordplatform.css.map */

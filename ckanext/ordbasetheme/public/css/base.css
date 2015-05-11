@@ -40,14 +40,14 @@ body {
   border-right: 1px solid #ccc; }
 
 .nav > li > a:hover, .nav > li > a:focus {
-  background-color: #e13f32; }
+  background-color: #dc1a00; }
 
 .module-content a {
-  color: #C3291D; }
+  color: #C21700; }
 
 .module-content a:hover,
 .module-content a:focus {
-  color: #e13f32; }
+  color: #dc1a00; }
 
 .module-content a.dropdown-toggle {
   color: #fff; }
@@ -56,7 +56,7 @@ body {
   color: #fff; }
 
 .module-content .btn {
-  color: #C3291D;
+  color: #C21700;
   border: none;
   box-shadow: none;
   text-shadow: inherit;
@@ -66,7 +66,7 @@ body {
 
 .module-content .btn-primary {
   color: #ffffff;
-  background-color: #C3291D; }
+  background-color: #C21700; }
 
 .module-content .btn-danger {
   color: #ffffff;
@@ -74,7 +74,7 @@ body {
 
 .module-content .btn-primary:hover {
   color: #ffffff;
-  background-color: #e13f32; }
+  background-color: #dc1a00; }
 
 .module-content .btn-danger:hover {
   color: #ffffff;
@@ -92,18 +92,17 @@ body {
 ul.tags li a.tag {
   font-size: 12px;
   background-color: #fff;
-  border-color: #C3291D; }
+  border-color: #C21700; }
 
 .tags ul.well li a.tag:hover,
 ul.tags li a.tag:hover {
-  background-color: #e13f32;
+  background-color: #dc1a00;
   color: #FFF;
   border: none; }
 
 /*****ACCOUNT HEADER*****/
 .account-masthead {
   min-height: 30px;
-  color: #FFF;
   color: #FFF;
   line-height: 20px;
   margin-left: 0px;
@@ -327,10 +326,10 @@ ul.tags li a.tag:hover {
 
 .header__content-tags ul li a,
 .content__data ul.tags li a {
-  border: 1px solid #C3291D;
+  border: 1px solid #C21700;
   text-decoration: none;
   background-color: #FFF;
-  color: #C3291D;
+  color: #C21700;
   padding: 2px 8px;
   font-size: 12px;
   font-weight: normal;
@@ -339,7 +338,7 @@ ul.tags li a.tag:hover {
 
 .header__content-tags ul li a:hover,
 .content__data ul.tags li a:hover {
-  background-color: #e13f32;
+  background-color: #dc1a00;
   color: #FFF; }
 
 /*****CONTENT*****/
@@ -383,19 +382,19 @@ ul.tags li a.tag:hover {
   text-decoration: none; }
 
 li.first {
-  border-right: 2px solid #C3291D; }
+  border-right: 2px solid #C21700; }
 
 a.button {
   color: #fff;
   padding: 10px 15px;
-  background-color: #C3291D;
+  background-color: #C21700;
   border-radius: 4px;
   text-decoration: none;
   float: right;
   font-width: bold; }
 
 a.button:hover {
-  background-color: #e13f32; }
+  background-color: #dc1a00; }
 
 .data-menu a.button {
   display: inline;
