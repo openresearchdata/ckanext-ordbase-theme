@@ -1,12 +1,12 @@
 .nav > li > a:hover, .nav > li > a:focus {
-  background-color: #067d72; }
+  background-color: #04655d; }
 
 .module-content a {
   color: #06968A; }
 
 .module-content a:hover,
 .module-content a:focus {
-  color: #067d72; }
+  color: #04655d; }
 
 .module-content .btn {
   color: #06968A; }
@@ -20,7 +20,7 @@
 
 .module-content .btn-primary:hover {
   color: #ffffff;
-  background-color: #067d72; }
+  background-color: #04655d; }
 
 .tags ul.well li a.tag,
 ul.tags li a.tag {
@@ -28,7 +28,7 @@ ul.tags li a.tag {
 
 .tags ul.well li a.tag:hover,
 ul.tags li a.tag:hover {
-  background-color: #067d72; }
+  background-color: #04655d; }
 
 /*****ACCOUNT HEADER*****/
 .account-masthead {
@@ -61,7 +61,7 @@ ul.tags li a.tag:hover {
 
 .header__content-tags ul li a:hover,
 .content__data ul.tags li a:hover {
-  background-color: #067d72; }
+  background-color: #04655d; }
 
 li.first {
   border-right-color: #06968A; }
@@ -70,6 +70,6 @@ a.button {
   background-color: #06968A; }
 
 a.button:hover {
-  background-color: #067d72; }
+  background-color: #04655d; }
 
 /*# sourceMappingURL=lifesci.css.map */
