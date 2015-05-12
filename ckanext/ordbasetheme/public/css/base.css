@@ -92,13 +92,14 @@ body {
 ul.tags li a.tag {
   font-size: 12px;
   background-color: #fff;
-  border-color: #C21700; }
+  border-color: #C21700;
+  box-shadow: none; }
 
 .tags ul.well li a.tag:hover,
 ul.tags li a.tag:hover {
   background-color: #a91400;
-  color: #FFF;
-  border: none; }
+  border-color: #a91400;
+  color: #FFF; }
 
 /*****ACCOUNT HEADER*****/
 .account-masthead {
@@ -295,6 +296,10 @@ ul.tags li a.tag:hover {
   float: left;
   margin-right: 8px; }
 
+.header__content-tags .tag,
+.header__content-tags .tag:hover {
+  box-shadow: none; }
+
 .header__content-tags ul,
 .ul.tags {
   list-style-type: none;
@@ -330,6 +335,7 @@ ul.tags li a.tag:hover {
 .header__content-tags ul li a:hover,
 .content__data ul.tags li a:hover {
   background-color: #a91400;
+  border-color: #a91400;
   color: #FFF; }
 
 /*****CONTENT*****/

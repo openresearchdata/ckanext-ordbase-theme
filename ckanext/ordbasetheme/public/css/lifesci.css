@@ -28,7 +28,8 @@ ul.tags li a.tag {
 
 .tags ul.well li a.tag:hover,
 ul.tags li a.tag:hover {
-  background-color: #04655d; }
+  background-color: #04655d;
+  border-color: #04655d; }
 
 /*****ACCOUNT HEADER*****/
 .account-masthead {
@@ -61,7 +62,8 @@ ul.tags li a.tag:hover {
 
 .header__content-tags ul li a:hover,
 .content__data ul.tags li a:hover {
-  background-color: #04655d; }
+  background-color: #04655d;
+  border-color: #04655d; }
 
 li.first {
   border-right-color: #06968A; }
