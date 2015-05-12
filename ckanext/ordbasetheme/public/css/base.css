@@ -290,7 +290,12 @@ ul.tags li a.tag:hover {
   border-bottom: none; }
 
 .dataset-tags ul.tags {
-  list-style-type: none; }
+  list-style-type: none;
+  overflow: hidden;
+  margin-left: 10px; }
+
+.tab-content .dataset-tags ul.tags {
+  margin-left: 0; }
 
 .dataset-tags ul.tags li {
   float: left;
@@ -344,8 +349,14 @@ ul.tags li a.tag:hover {
   min-height: 400px; }
 
 .data-menu {
-  margin-bottom: 30px;
-  margin-top: 30px; }
+  margin-top: 30px;
+  margin-bottom: 20px;
+  overflow: hidden; }
+
+.data-menu ul {
+  overflow: hidden;
+  float: left;
+  margin-top: 3px; }
 
 .container .tab-content {
   display: block; }
@@ -360,10 +371,8 @@ ul.tags li a.tag:hover {
 .content__data ul,
 .content__project ul {
   list-style-type: none;
-  margin-top: 30px;
   margin-left: 0;
-  margin-left: 0;
-  display: inline; }
+  overflow: hidden; }
 
 .content__data ul li,
 .content__project ul li {
@@ -378,6 +387,10 @@ ul.tags li a.tag:hover {
   color: #808184;
   text-decoration: none; }
 
+.content__data ul li.first,
+.content__project ul li.first {
+  padding-left: 0; }
+
 li.first {
   border-right: 2px solid #C21700; }
 
@@ -386,22 +399,18 @@ a.button {
   padding: 10px 15px;
   background-color: #C21700;
   border-radius: 4px;
-  text-decoration: none;
-  float: right;
-  font-width: bold; }
+  text-decoration: none; }
 
 a.button:hover {
   background-color: #a91400; }
 
 .data-menu a.button {
-  display: inline;
-  margin-top: -4px; }
+  float: right; }
 
 .data-box {
   background-color: #fff;
   margin-top: 10px;
-  margin-left: 20px;
-  padding: 12px; }
+  padding: 12px 0; }
 
 .data-box h3 a {
   margin: 0px;
