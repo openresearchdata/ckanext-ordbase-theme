@@ -4900,7 +4900,7 @@ msgid "Contact"
 msgstr "Contact"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/home/snippets/upper:37
-msgid "Most used tags: "
+msgid "Most used tags:"
 msgstr "Mots-clés les plus fréquents:"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/footer:6

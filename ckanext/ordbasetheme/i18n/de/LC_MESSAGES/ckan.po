@@ -4905,7 +4905,7 @@ msgid "Contact"
 msgstr "Kontakt"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/home/snippets/upper:37
-msgid "Most used tags: "
+msgid "Most used tags:"
 msgstr "Häufigste Schlagworte:"
 
 #: ckanext-socialsci-theme/ckanext/socialscitheme/templates/footer:6
