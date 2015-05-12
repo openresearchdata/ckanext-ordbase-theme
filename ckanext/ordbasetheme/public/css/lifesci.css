@@ -18,8 +18,15 @@
 .module-content .btn-danger {
   color: #ffffff; }
 
-.module-content .btn-primary:hover {
+.module-content .btn-primary:hover,
+.module-content .btn-group.open .btn-primary.dropdown-toggle {
   color: #ffffff;
+  background-color: #04655d; }
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
   background-color: #04655d; }
 
 .tags ul.well li a.tag,
