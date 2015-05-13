@@ -14,7 +14,8 @@ body {
   /* 2 */
   background: none;
   font-size: 16px;
-  min-width: 1280px; }
+  min-width: 1280px;
+  padding: 0; }
 
 .container {
   width: 100%;
@@ -142,14 +143,18 @@ ul.tags li a.tag:hover {
   padding-left: 0px !important;
   overflow: hidden; }
 
-.toolbar-title img {
+.toolbar-title .logo {
   float: left;
+  width: 20%; }
+
+.toolbar-title img {
   margin-top: 15px;
   margin-right: 12px;
   height: 36px; }
 
 .toolbar-title h1 {
   float: left;
+  width: 80%;
   font-size: 16px;
   font-weight: bold;
   color: #ffffff;
