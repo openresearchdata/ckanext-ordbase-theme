@@ -13,8 +13,10 @@
       </ul>
     </div>
     <div class="grid__col grid__col--1-of-4 header__content-topmenu toolbar-title">
-      <a href="{% url_for('/') %}"><img src="{{ app_globals.site_logo }}" alt="Logo">
-      <h1>{{ app_globals.site_title }}</h1></a>
+      <a href="{% url_for('/') %}">
+        <div class="logo"><img src="{{ app_globals.site_logo }}" alt="Logo"></div>
+        <h1>{{ app_globals.site_title }}</h1>
+      </a>
     </div>
     <div class="grid__col grid__col--1-of-4 header__content-topmenu toolbar-search">
       <form class="module-content search-form" method="get" action="{% url_for controller='package', action='search' %}">

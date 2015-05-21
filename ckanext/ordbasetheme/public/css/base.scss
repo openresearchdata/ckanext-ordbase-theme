@@ -24,6 +24,7 @@ body {
   background: none;
   font-size: 16px;
   min-width: 1280px;
+  padding: 0;
 }
 
 .container {
@@ -171,8 +172,11 @@ ul.tags li a.tag:hover {
   overflow: hidden;
 }
 
-.toolbar-title img {
+.toolbar-title .logo {
   float: left;
+  width: 20%;
+}
+.toolbar-title img {
   margin-top: 15px;
   margin-right: 12px;
   height: 36px;
@@ -180,6 +184,7 @@ ul.tags li a.tag:hover {
 
 .toolbar-title h1 {
   float: left;
+  width: 80%;
   font-size: 16px;
   font-weight: bold;
   color: $brand-color;
@@ -322,7 +327,6 @@ ul.tags li a.tag:hover {
 
 .logo-title img {
   width: 160px;
-
 }
 
 .logo-title h1 {
