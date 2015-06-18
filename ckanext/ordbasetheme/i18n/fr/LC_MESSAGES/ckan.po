@@ -244,7 +244,7 @@ msgstr "Les paramètres de la requête doivent être encodés au format JSON."
 #: ckan/controllers/group.py:795 ckan/controllers/group.py:880
 #: ckan/controllers/package.py:1288 ckan/controllers/package.py:1303
 msgid "Group not found"
-msgstr "Groupe introuvable"
+msgstr "Projet introuvable"
 
 #: ckan/controllers/feed.py:234 ckan/controllers/group.py:364
 msgid "Organization not found"
@@ -252,14 +252,14 @@ msgstr ""
 
 #: ckan/controllers/group.py:172
 msgid "Incorrect group type"
-msgstr "Type de groupe incorrect"
+msgstr "Type de projet incorrect"
 
 #: ckan/controllers/group.py:192 ckan/controllers/group.py:387
 #: ckan/controllers/group.py:486 ckan/controllers/group.py:527
 #: ckan/controllers/group.py:559 ckan/controllers/group.py:882
 #, python-format
 msgid "Unauthorized to read group %s"
-msgstr "Vous n'êtes pas autorisé à lire le groupe %s"
+msgstr "Vous n'êtes pas autorisé à lire le projet %s"
 
 #: ckan/controllers/group.py:285 ckan/controllers/home.py:70
 #: ckan/controllers/package.py:241 ckan/lib/helpers.py:681
@@ -286,7 +286,7 @@ msgstr "Organisations"
 #: ckan/templates/package/read_base.html:25
 #: ckan/templates/revision/diff.html:16 ckan/templates/revision/read.html:84
 msgid "Groups"
-msgstr "Groupes"
+msgstr "Projets"
 
 #: ckan/controllers/group.py:287 ckan/controllers/home.py:72
 #: ckan/controllers/package.py:243 ckan/lib/helpers.py:683
@@ -314,7 +314,7 @@ msgstr "Vous n'êtes pas autorisé à effectuer des mises à jour par lots"
 
 #: ckan/controllers/group.py:446
 msgid "Unauthorized to create a group"
-msgstr "Vous n'êtes pas autorisé à créer un groupe"
+msgstr "Vous n'êtes pas autorisé à créer un projet"
 
 #: ckan/controllers/group.py:495 ckan/controllers/package.py:338
 #: ckan/controllers/package.py:803 ckan/controllers/package.py:1436
@@ -339,7 +339,7 @@ msgstr "L'utilisateur %r n'est pas autorisé à éditer les droits de %s"
 #: ckan/controllers/group.py:630 ckan/controllers/group.py:706
 #, python-format
 msgid "Unauthorized to delete group %s"
-msgstr "Vous n'êtes pas autorisé à supprimer le groupe %s"
+msgstr "Vous n'êtes pas autorisé à supprimer le projet %s"
 
 #: ckan/controllers/group.py:609
 msgid "Organization has been deleted."
@@ -347,21 +347,21 @@ msgstr "Cette organisation a été supprimée."
 
 #: ckan/controllers/group.py:611
 msgid "Group has been deleted."
-msgstr "Ce groupe a été supprimé."
+msgstr "Ce projet a été supprimé."
 
 #: ckan/controllers/group.py:677
 #, python-format
 msgid "Unauthorized to add member to group %s"
-msgstr "Vous n'êtes pas autorisé à ajouter un membre au groupe %s"
+msgstr "Vous n'êtes pas autorisé à ajouter un membre au projet %s"
 
 #: ckan/controllers/group.py:694
 #, python-format
 msgid "Unauthorized to delete group %s members"
-msgstr "Vous n'êtes pas autorisé à supprimer un membre du groupe %s"
+msgstr "Vous n'êtes pas autorisé à supprimer un membre du projet %s"
 
 #: ckan/controllers/group.py:700
 msgid "Group member has been deleted."
-msgstr "Le membre de ce groupe  a  été supprimé"
+msgstr "Le membre de ce projet  a  été supprimé"
 
 #: ckan/controllers/group.py:722 ckan/controllers/package.py:446
 msgid "Select two revisions before doing the comparison."
@@ -374,11 +374,11 @@ msgstr "L'utilisateur %r n'est pas autorisé à éditer %r"
 
 #: ckan/controllers/group.py:748
 msgid "CKAN Group Revision History"
-msgstr "Historique des révisions du groupe CKAN"
+msgstr "Historique des révisions du projet CKAN"
 
 #: ckan/controllers/group.py:751
 msgid "Recent changes to CKAN Group: "
-msgstr "Modifications récentes du groupe CKAN : "
+msgstr "Modifications récentes du projet CKAN : "
 
 #: ckan/controllers/group.py:772 ckan/controllers/package.py:496
 msgid "Log message: "
@@ -386,7 +386,7 @@ msgstr "Message de log : "
 
 #: ckan/controllers/group.py:798
 msgid "Unauthorized to read group {group_id}"
-msgstr "Vous n'êtes pas autorisé à lire le groupe {group_id}"
+msgstr "Vous n'êtes pas autorisé à lire le projet {group_id}"
 
 #: ckan/controllers/group.py:817 ckan/controllers/package.py:1213
 #: ckan/controllers/user.py:671
@@ -850,7 +850,7 @@ msgstr "{actor} a ajouté le tag {tag} au jeu de données {dataset}"
 
 #: ckan/lib/activity_streams.py:67
 msgid "{actor} updated the group {group}"
-msgstr "{actor} a mis à jour le groupe {group}"
+msgstr "{actor} a mis à jour le projet {group}"
 
 #: ckan/lib/activity_streams.py:70
 msgid "{actor} updated the organization {organization}"
@@ -883,7 +883,7 @@ msgstr "{actor} a mis à jour le {related_type} {related_item}"
 
 #: ckan/lib/activity_streams.py:92
 msgid "{actor} deleted the group {group}"
-msgstr "{actor} a supprimé le groupe {group}"
+msgstr "{actor} a supprimé le projet {group}"
 
 #: ckan/lib/activity_streams.py:95
 msgid "{actor} deleted the organization {organization}"
@@ -903,7 +903,7 @@ msgstr "{actor} a supprimé la ressource {resource} du jeu de données {dataset}
 
 #: ckan/lib/activity_streams.py:108
 msgid "{actor} created the group {group}"
-msgstr "{actor} a créé le groupe {group}"
+msgstr "{actor} a créé le projet {group}"
 
 #: ckan/lib/activity_streams.py:111
 msgid "{actor} created the organization {organization}"
@@ -1256,7 +1256,7 @@ msgstr "Jeu de données"
 #: ckanext/stats/templates/ckanext/stats/index.html:113
 #: ckanext/stats/templates_legacy/ckanext/stats/index.html:82
 msgid "Group"
-msgstr "Groupe"
+msgstr "Projet"
 
 #: ckan/logic/converters.py:178
 msgid "Could not parse as valid JSON"
@@ -1314,7 +1314,7 @@ msgstr "Relié"
 
 #: ckan/logic/validators.py:260
 msgid "That group name or ID does not exist."
-msgstr "Ce groupe d'utilisateur ou cet identifiant n'existe pas."
+msgstr "Ce projet d'utilisateur ou cet identifiant n'existe pas."
 
 #: ckan/logic/validators.py:274
 msgid "Activity type"
@@ -1370,7 +1370,7 @@ msgstr "Clé double \"%s\""
 
 #: ckan/logic/validators.py:428
 msgid "Group name already exists in database"
-msgstr "Le nom de groupe existe déjà dans la base de données"
+msgstr "Le nom de projet existe déjà dans la base de données"
 
 #: ckan/logic/validators.py:434
 #, python-format
@@ -1511,7 +1511,7 @@ msgstr "API REST : création de l'objet membre %s"
 
 #: ckan/logic/action/create.py:772
 msgid "Trying to create an organization as a group"
-msgstr "Tentative de création d'une organisation en tant que groupe"
+msgstr "Tentative de création d'une organisation en tant que projet"
 
 #: ckan/logic/action/create.py:859
 msgid "You must supply a package id or name (parameter \"package\")."
@@ -1553,7 +1553,7 @@ msgstr "L'utilisateur {username} n'existe pas."
 
 #: ckan/logic/action/create.py:1410 ckan/logic/action/create.py:1418
 msgid "You must be logged in to follow a group."
-msgstr "Vous devez vous identifier pour suivre un groupe."
+msgstr "Vous devez vous identifier pour suivre un projet."
 
 #: ckan/logic/action/delete.py:68
 #, python-format
@@ -1649,7 +1649,7 @@ msgstr "L'utilisateur %s n'est pas autorisé à enregistrer des jeux de données
 #: ckan/logic/auth/create.py:29 ckan/logic/auth/update.py:43
 #, python-format
 msgid "User %s not authorized to edit these groups"
-msgstr "L'utilisateur %s n'est pas autorisé à modifier ces groupes"
+msgstr "L'utilisateur %s n'est pas autorisé à modifier ces projets"
 
 #: ckan/logic/auth/create.py:36
 #, python-format
@@ -1686,7 +1686,7 @@ msgstr "L'utilisateur %s n'est pas autorisé à modifier ces jeux de données"
 #: ckan/logic/auth/create.py:126
 #, python-format
 msgid "User %s not authorized to create groups"
-msgstr "L'utilisateur %s n'est pas autorisé à créer ces groupes"
+msgstr "L'utilisateur %s n'est pas autorisé à créer ces projets"
 
 #: ckan/logic/auth/create.py:136
 #, python-format
@@ -1703,7 +1703,7 @@ msgstr "Non autorisé à créer des utilisateurs"
 
 #: ckan/logic/auth/create.py:198
 msgid "Group was not found."
-msgstr "Groupe introuvable."
+msgstr "Projet introuvable."
 
 #: ckan/logic/auth/create.py:218
 msgid "Valid API key needed to create a package"
@@ -1711,7 +1711,7 @@ msgstr "Une clé d'API valide est nécessaire pour enregistrer un jeu de donnée
 
 #: ckan/logic/auth/create.py:226
 msgid "Valid API key needed to create a group"
-msgstr "Une clé d'API valide est nécessaire pour créer un groupe"
+msgstr "Une clé d'API valide est nécessaire pour créer un projet"
 
 #: ckan/logic/auth/create.py:246
 #, python-format
@@ -1721,7 +1721,7 @@ msgstr "L'utilisateur  %s n'est pas autorisé à ajouter des membres"
 #: ckan/logic/auth/create.py:270 ckan/logic/auth/update.py:113
 #, python-format
 msgid "User %s not authorized to edit group %s"
-msgstr "L'utilisateur %s n'est pas autorisé à modifier le groupe %s"
+msgstr "L'utilisateur %s n'est pas autorisé à modifier le projet %s"
 
 #: ckan/logic/auth/delete.py:34
 #, python-format
@@ -1744,12 +1744,12 @@ msgstr "L'utilisateur %s n'est pas autorisé à supprimer la relation %s"
 #: ckan/logic/auth/delete.py:95
 #, python-format
 msgid "User %s not authorized to delete groups"
-msgstr "L'utilisateur %s n'est pas autorisé à supprimer des groupes"
+msgstr "L'utilisateur %s n'est pas autorisé à supprimer des projets"
 
 #: ckan/logic/auth/delete.py:99
 #, python-format
 msgid "User %s not authorized to delete group %s"
-msgstr "L'utilisateur %s n'est pas autorisé à supprimer le groupe %s"
+msgstr "L'utilisateur %s n'est pas autorisé à supprimer le projet %s"
 
 #: ckan/logic/auth/delete.py:116
 #, python-format
@@ -1783,7 +1783,7 @@ msgstr "L'utilisateur %s n'est pas autorisé à lire la ressource %s"
 
 #: ckan/logic/auth/get.py:166
 #, python-format
-msgid "User %s not authorized to read group %s"
+msgid "User %s not authorized to read projet %s"
 msgstr ""
 
 #: ckan/logic/auth/get.py:234
@@ -1821,12 +1821,12 @@ msgstr "Il faut être un administrateur pour changer le champ \"élément lié\"
 #: ckan/logic/auth/update.py:165
 #, python-format
 msgid "User %s not authorized to change state of group %s"
-msgstr "L'utilisateur %s n'est pas autorisé à modifier l'état du groupe %s"
+msgstr "L'utilisateur %s n'est pas autorisé à modifier l'état du projet %s"
 
 #: ckan/logic/auth/update.py:182
 #, python-format
 msgid "User %s not authorized to edit permissions of group %s"
-msgstr "L'utilisateur %s n'est pas autorisé à modifier les permissions du groupe %s"
+msgstr "L'utilisateur %s n'est pas autorisé à modifier les permissions du projet %s"
 
 #: ckan/logic/auth/update.py:209
 msgid "Have to be logged in to edit user"
@@ -1862,7 +1862,7 @@ msgstr "Une clé d'API valide est nécessaire pour modifier un jeu de données"
 
 #: ckan/logic/auth/update.py:291
 msgid "Valid API key needed to edit a group"
-msgstr "Une clé d'API valide est nécessaire pour modifier un groupe"
+msgstr "Une clé d'API valide est nécessaire pour modifier un projet"
 
 #: ckan/model/license.py:177
 msgid "License not specified"
@@ -2529,11 +2529,11 @@ msgstr "Administrateurs"
 
 #: ckan/templates/group/base_form_page.html:7
 msgid "Add a Group"
-msgstr "Ajouter un groupe"
+msgstr "Ajouter un projet"
 
 #: ckan/templates/group/base_form_page.html:11
 msgid "Group Form"
-msgstr "Formulaire de groupe"
+msgstr "Formulaire de projet"
 
 #: ckan/templates/group/confirm_delete.html:3
 #: ckan/templates/group/confirm_delete.html:15
@@ -2554,7 +2554,7 @@ msgstr "Confirmer la suppression"
 
 #: ckan/templates/group/confirm_delete.html:11
 msgid "Are you sure you want to delete group - {name}?"
-msgstr "Êtes-vous sûr de vouloir supprimer le groupe - {name}?"
+msgstr "Êtes-vous sûr de vouloir supprimer le projet - {name}?"
 
 #: ckan/templates/group/confirm_delete_member.html:11
 #: ckan/templates/organization/confirm_delete_member.html:11
@@ -2575,7 +2575,7 @@ msgstr "Éditer"
 
 #: ckan/templates/group/edit.html:12
 msgid "Edit Group"
-msgstr "Modifier le Groupe"
+msgstr "Modifier le projet"
 
 #: ckan/templates/group/edit_base.html:21 ckan/templates/group/members.html:3
 #: ckan/templates/organization/edit_base.html:24
@@ -2605,11 +2605,11 @@ msgstr "Historique"
 #: ckan/templates/group/index.html:13
 #: ckan/templates/user/dashboard_groups.html:7
 msgid "Add Group"
-msgstr "Ajouter un groupe"
+msgstr "Ajouter un projet"
 
 #: ckan/templates/group/index.html:20
 msgid "Search groups..."
-msgstr "Rechercher les groupes..."
+msgstr "Rechercher les projets..."
 
 #: ckan/templates/group/index.html:20 ckan/templates/group/read.html:16
 #: ckan/templates/organization/bulk_process.html:97
@@ -2635,12 +2635,12 @@ msgstr "Nom Décroissant"
 
 #: ckan/templates/group/index.html:29
 msgid "There are currently no groups for this site"
-msgstr "Il n'y a actuellement aucun groupe pour ce site"
+msgstr "Il n'y a actuellement aucun projet pour ce site"
 
 #: ckan/templates/group/index.html:31
 #: ckan/templates/organization/index.html:31
 msgid "How about creating one?"
-msgstr "Et si vous en créiez un ?"
+msgstr "Et si vous en créiez un projet?"
 
 #: ckan/templates/group/member_new.html:8
 #: ckan/templates/organization/member_new.html:10
@@ -2732,20 +2732,20 @@ msgid ""
 " <p><strong>Admin:</strong> Can edit group information, as well as manage "
 "organization members.</p> <p><strong>Member:</strong> Can add/remove "
 "datasets from groups</p> "
-msgstr "<p><strong>Administrateur:</strong> Peut éditer les informations de groupe, ainsi que gérer les membres d'organisations.</p> <p><strong>Membre:</strong> Peut ajouter/supprimer des jeux de données dans les groupes</p>"
+msgstr "<p><strong>Administrateur:</strong> Peut éditer les informations de projet, ainsi que gérer les membres d'organisations.</p> <p><strong>Membre:</strong> Peut ajouter/supprimer des jeux de données dans les projets</p>"
 
 #: ckan/templates/group/new.html:3 ckan/templates/group/new.html:5
 #: ckan/templates/group/new.html:7
 msgid "Create a Group"
-msgstr "Créer un Groupe"
+msgstr "Créer un projet"
 
 #: ckan/templates/group/new_group_form.html:17
 msgid "Update Group"
-msgstr "Mise à jour du Groupe"
+msgstr "Mise à jour du projet"
 
 #: ckan/templates/group/new_group_form.html:19
 msgid "Create Group"
-msgstr "Créer le Groupe"
+msgstr "Créer le projet"
 
 #: ckan/templates/group/read.html:15 ckan/templates/organization/read.html:19
 #: ckan/templates/package/search.html:29
@@ -2780,7 +2780,7 @@ msgstr "Rechercher les jeux des données..."
 
 #: ckan/templates/group/snippets/feeds.html:3
 msgid "Datasets in group: {group}"
-msgstr "Jeux de données  du groupe : {group}"
+msgstr "Jeux de données  du projet : {group}"
 
 #: ckan/templates/group/snippets/feeds.html:4
 #: ckan/templates/organization/snippets/feeds.html:4
@@ -2795,11 +2795,11 @@ msgstr "Titre"
 
 #: ckan/templates/group/snippets/group_form.html:10
 msgid "My Group"
-msgstr "Mon Groupe"
+msgstr "Mon projet"
 
 #: ckan/templates/group/snippets/group_form.html:18
 msgid "my-group"
-msgstr "mon-groupe"
+msgstr "mon-projet"
 
 #: ckan/templates/group/snippets/group_form.html:20
 #: ckan/templates/organization/snippets/organization_form.html:20
@@ -2812,15 +2812,15 @@ msgstr "Description"
 
 #: ckan/templates/group/snippets/group_form.html:20
 msgid "A little information about my group..."
-msgstr "Un peu d'information au sujet de mon groupe..."
+msgstr "Un peu d'information au sujet de mon projet..."
 
 #: ckan/templates/group/snippets/group_form.html:60
 msgid "Are you sure you want to delete this Group?"
-msgstr "Etes-vous sûr de vouloir supprimer ce Groupe?"
+msgstr "Etes-vous sûr de vouloir supprimer ce projet?"
 
 #: ckan/templates/group/snippets/group_form.html:64
 msgid "Save Group"
-msgstr "Sauvegarder le Groupe"
+msgstr "Sauvegarder le projet"
 
 #: ckan/templates/group/snippets/group_item.html:32
 #: ckan/templates/organization/snippets/organization_item.html:31
@@ -2845,11 +2845,11 @@ msgstr "Afficher {name}"
 
 #: ckan/templates/group/snippets/group_item.html:43
 msgid "Remove dataset from this group"
-msgstr "Supprimer le jeu de données de ce groupe"
+msgstr "Supprimer le jeu de données de ce projet"
 
 #: ckan/templates/group/snippets/helper.html:4
 msgid "What are Groups?"
-msgstr "Que sont les groupes ?"
+msgstr "Que sont les projets?"
 
 #: ckan/templates/group/snippets/helper.html:8
 msgid ""
@@ -2857,7 +2857,7 @@ msgid ""
 "could be to catalogue datasets for a particular project or team, or on a "
 "particular theme, or as a very simple way to help people find and search "
 "your own published datasets. "
-msgstr "Vous pouvez utiliser les groupes CKAN pour créer et gérer des collections de jeux de données. Cela peut être pour cataloguer des jeux de données pour un projet ou une équipe en particulier, ou autour d'un thème spécifique, ou comme moyen très simple d'aider à parcourir et découvrir vos jeux de données publiés."
+msgstr "Vous pouvez utiliser les projets CKAN pour créer et gérer des collections de jeux de données. Cela peut être pour cataloguer des jeux de données pour un projet ou une équipe en particulier, ou autour d'un thème spécifique, ou comme moyen très simple d'aider à parcourir et découvrir vos jeux de données publiés."
 
 #: ckan/templates/group/snippets/history_revisions.html:10
 #: ckan/templates/package/snippets/history_revisions.html:10
@@ -2985,11 +2985,11 @@ msgstr "organisations"
 
 #: ckan/templates/home/snippets/stats.html:22
 msgid "group"
-msgstr "groupe"
+msgstr "projet"
 
 #: ckan/templates/home/snippets/stats.html:22
 msgid "groups"
-msgstr "groupes"
+msgstr "projets"
 
 #: ckan/templates/home/snippets/stats.html:28
 msgid "related item"
@@ -3248,15 +3248,15 @@ msgstr "Mise à jour"
 
 #: ckan/templates/package/group_list.html:14
 msgid "Associate this group with this dataset"
-msgstr "Associer ce groupe à un jeu de données"
+msgstr "Associer ce projet à un jeu de données"
 
 #: ckan/templates/package/group_list.html:14
 msgid "Add to group"
-msgstr "Ajouter à un groupe"
+msgstr "Ajouter à un projet"
 
 #: ckan/templates/package/group_list.html:23
 msgid "There are no groups associated with this dataset"
-msgstr "Il n'y a pas de groupe associé à ce jeu de données"
+msgstr "Il n'y a pas de projet associé à ce jeu de données"
 
 #: ckan/templates/package/new_package_form.html:15
 msgid "Update Dataset"
@@ -4125,8 +4125,8 @@ msgstr "Aucun jeu de données trouvé"
 #: ckan/templates/snippets/search_result_text.html:21
 msgid "{number} group found for \"{query}\""
 msgid_plural "{number} groups found for \"{query}\""
-msgstr[0] "{number} groupe  trouvé pour \"{query}\""
-msgstr[1] "{number} groupes  trouvés pour \"{query}\""
+msgstr[0] "{number} projet  trouvé pour \"{query}\""
+msgstr[1] "{number} projets  trouvés pour \"{query}\""
 
 #: ckan/templates/snippets/search_result_text.html:22
 msgid "No groups found for \"{query}\""
@@ -4135,12 +4135,12 @@ msgstr "Aucun groupe trouvé pour \"{query}\""
 #: ckan/templates/snippets/search_result_text.html:23
 msgid "{number} group found"
 msgid_plural "{number} groups found"
-msgstr[0] "{number} groupe  trouvé"
-msgstr[1] "{number} groupes trouvés"
+msgstr[0] "{number} projet  trouvé"
+msgstr[1] "{number} projets trouvés"
 
 #: ckan/templates/snippets/search_result_text.html:24
 msgid "No groups found"
-msgstr "Aucun groupe trouvé"
+msgstr "Aucun projet trouvé"
 
 #: ckan/templates/snippets/search_result_text.html:27
 msgid "{number} organization found for \"{query}\""
@@ -4211,7 +4211,7 @@ msgstr "Mes organisations"
 #: ckan/templates/user/dashboard.html:22
 #: ckan/templates/user/dashboard_groups.html:12
 msgid "My Groups"
-msgstr "Mes groupes"
+msgstr "Mes projets"
 
 #: ckan/templates/user/dashboard.html:39
 msgid "Activity from items that I'm following"
@@ -4231,7 +4231,7 @@ msgstr "Voulez-vous en créer un maintenant ?"
 
 #: ckan/templates/user/dashboard_groups.html:20
 msgid "You are not a member of any groups."
-msgstr "Vous n'êtes membre d'aucun groupe."
+msgstr "Vous n'êtes membre d'aucun projets."
 
 #: ckan/templates/user/dashboard_organizations.html:20
 msgid "You are not a member of any organizations."
@@ -4400,7 +4400,7 @@ msgstr "Pourquoi s'inscrire ?"
 
 #: ckan/templates/user/new.html:28
 msgid "Create datasets, groups and other exciting things"
-msgstr "Créer des jeux de données, des groupes et d'autres choses passionnantes"
+msgstr "Créer des jeux de données, des projets et d'autres choses passionnantes"
 
 #: ckan/templates/user/new_user_form.html:5
 msgid "username"
@@ -4564,7 +4564,7 @@ msgstr ""
 #: ckanext/example_theme/v10_custom_snippet/templates/snippets/example_theme_most_popular_groups.html:20
 #: ckanext/example_theme/v11_HTML_and_CSS/templates/snippets/example_theme_most_popular_groups.html:19
 msgid "This group has no description"
-msgstr "Il n'y a pas de description pour ce groupe"
+msgstr "Il n'y a pas de description pour ce projet"
 
 #: ckanext/example_theme/v12_extra_public_dir/templates/home/snippets/promoted.html:4
 msgid "CKAN's data previewing tool has many powerful features"
@@ -4761,7 +4761,7 @@ msgstr "Aucun jeu de données modifié"
 #: ckanext/stats/templates/ckanext/stats/index.html:182
 #: ckanext/stats/templates_legacy/ckanext/stats/index.html:80
 msgid "Largest Groups"
-msgstr "Groupes les plus gros"
+msgstr "Projets les plus gros"
 
 #: ckanext/stats/templates/ckanext/stats/index.html:114
 #: ckanext/stats/templates_legacy/ckanext/stats/index.html:82
@@ -4770,7 +4770,7 @@ msgstr "Nombre de jeux de données"
 
 #: ckanext/stats/templates/ckanext/stats/index.html:127
 msgid "No groups"
-msgstr "Pas de groupes"
+msgstr "Pas de projets"
 
 #: ckanext/stats/templates/ckanext/stats/index.html:132
 #: ckanext/stats/templates/ckanext/stats/index.html:183
@@ -4829,7 +4829,7 @@ msgstr "Tableau de bord des jeux de données"
 msgid ""
 "Choose a dataset attribute and find out which categories in that area have "
 "the most datasets. E.g. tags, groups, license, res_format, country."
-msgstr "Choisissez un attribut de jeu de données et découvrez quelles sont les catégories qui rassemblent le plus de jeux de données dans ce domaine. Par exemple mots-clés, groupes, licences, format, pays."
+msgstr "Choisissez un attribut de jeu de données et découvrez quelles sont les catégories qui rassemblent le plus de jeux de données dans ce domaine. Par exemple mots-clés, projets, licences, format, pays."
 
 #: ckanext/stats/templates_legacy/ckanext/stats/leaderboard.html:20
 msgid "Choose area"
