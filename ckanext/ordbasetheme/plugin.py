@@ -81,7 +81,7 @@ def get_ordbasetheme_config(option):
     # isn't in the config file.
     return config.get('ckan.ordbasetheme.' + option, False)
 
-def remove_facet(facets_dict, facets_to_remove):
+def remove_facets(facets_dict, facets_to_remove):
     new_facets = collections.OrderedDict()
     for key in facets_dict.keys():
         if key in facets_to_remove:
@@ -123,10 +123,10 @@ class OrdBaseThemePlugin(plugins.SingletonPlugin, tk.DefaultDatasetForm):
     #IFacets functions
     # Remove organization from faceted search
     def dataset_facets(self, facets_dict, package_type):
-        return remove_facet(facets_dict, ['organization'])
+        return remove_facets(facets_dict, ['organization'])
 
     def group_facets(self, facets_dict, package_type):
-        return remove_facet(facets_dict, ['organization'])
+        return remove_facets(facets_dict, ['organization'])
 
     def organization_facets(self, facets_dict, package_type):
-        return remove_facet(facets_dict, ['organization'])
+        return remove_facets(facets_dict, ['organization'])
