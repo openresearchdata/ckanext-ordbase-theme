@@ -2,18 +2,18 @@
   <div class="header__content">
     <div class="container">
       <div class="grid">
-        <div class="grid__col grid__col--1-of-3 header__content-topmenu">
+        <div class="grid__col grid__col--1-of-4 header__content-topmenu">
           <ul>
             <li><a href="{% url_for('search') %}">{{ _('Datasets') }}</a></li>
             <li><a href="{% url_for('group_index') %}">{{ _('Projects') }}</a></li>
           </ul>
         </div>
-        <div class="grid__col grid__col--1-of-3 logo-title">
+        <div class="grid__col grid__col--2-of-4 logo-title">
           <img src="{{ app_globals.site_logo }}" alt="Logo">
 
           <h1>{{ app_globals.site_title }}</h1>
         </div>
-        <div class="grid__col grid__col--1-of-3 header__content-metamenu">
+        <div class="grid__col grid__col--1-of-4 header__content-metamenu">
           <ul>
             <li><a href="{% url_for('/pages/about') %}">{{ _('About') }}</a></li>
             <li><a href="{% url_for('/pages/faq') %}">{{ _('FAQ') }}</a></li>
@@ -42,6 +42,14 @@
                     <li><a class="tag" href="{% url_for controller='package', action='search', tags=tag.name %}">{{ h.truncate(tag.display_name, 22) }}</a></li>
                   {% endfor %}
                   </ul>
+                </div>
+              {% elif h.get_ordbasetheme_config('theme') == 'ordplatform' %}
+                <div class="header__platform-links">
+                    <ul>
+                        <li><a href="http://data.humanities.ch/">Open Humanities Data</a></li>
+                        <li><a href="http://lifesciencedata.ch/">Open Life Sciences Data</a></li>
+                        <li><a href="http://opendata.forscenter.ch/">Open Social Sciences Data</a></li>
+                    </ul>
                 </div>
               {% endif %}
             </div>

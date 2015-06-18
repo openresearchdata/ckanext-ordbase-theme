@@ -13,6 +13,7 @@ $footer-text-color: #a1a1a1;
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -60,6 +61,7 @@ body {
 .module-content a {
   color: $link-color;
 }
+
 .module-content a:hover,
 .module-content a:focus {
   color: $hover-color;
@@ -82,29 +84,34 @@ body {
   background-color: #F7F7F6;
   font-weight: normal;
 }
+
 .module-content .btn-primary {
   color: #ffffff;
   background-color: $link-color;
 }
+
 .module-content .btn-danger {
   color: #ffffff;
   background-color: $color-danger;
 }
+
 .module-content .btn-primary:hover,
 .module-content .btn-group.open .btn-primary.dropdown-toggle {
   color: #ffffff;
   background-color: $hover-color;
 }
-.dropdown-menu>li>a:hover,
-.dropdown-menu>li>a:focus,
-.dropdown-submenu:hover>a,
-.dropdown-submenu:focus>a {
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
   background: none;
   background-color: $hover-color;
 }
+
 .module-content .btn-danger:hover {
   color: #ffffff;
-  background-color: darken($link-color, 5%);;
+  background-color: darken($link-color, 5%);
 }
 
 [role=main], .main {
@@ -176,6 +183,7 @@ ul.tags li a.tag:hover {
   float: left;
   width: 20%;
 }
+
 .toolbar-title img {
   margin-top: 15px;
   margin-right: 12px;
@@ -194,7 +202,6 @@ ul.tags li a.tag:hover {
 .toolbar-title a {
   text-decoration: none;
 }
-
 
 .toolbar-nav-right ul {
   float: right;
@@ -234,6 +241,10 @@ ul.tags li a.tag:hover {
   text-decoration: none;
 }
 
+.header__top-language ul li a:hover {
+  color: #fff;
+}
+
 .header__top-language ul li:last-child {
   border-right: none;
 }
@@ -266,11 +277,11 @@ ul.tags li a.tag:hover {
   font-size: 14px;
   text-align: right;
 }
+
 .header__top-mandated p img {
   margin-left: 5px;
   height: 16px;
 }
-
 
 /*****HEADER CONTENT*****/
 .header__content {
@@ -304,7 +315,7 @@ ul.tags li a.tag:hover {
 
 .header__content-topmenu ul li a:hover,
 .header__content-metamenu ul li a:hover {
-  text-decoration: underline;
+  color: #68686A;
 }
 
 .header__content-topmenu ul li:last-child,
@@ -334,7 +345,7 @@ ul.tags li a.tag:hover {
   margin-top: 10px;
   margin-bottom: 0px;
   font-weight: normal;
-  font-size: 36px;
+  font-size: 30px;
 }
 
 .header__content-metamenu ul {
@@ -369,6 +380,7 @@ ul.tags li a.tag:hover {
   overflow: hidden;
   margin-left: 10px;
 }
+
 .tab-content .dataset-tags ul.tags {
   margin-left: 0;
 }
@@ -401,7 +413,7 @@ ul.tags li a.tag:hover {
 .content__data ul.tags li {
   margin-right: 5px;
   display: inline;
-  line-height: 30px;
+  line-height: 24px;
   padding-left: 0px;
   padding-right: 0px;
 }
@@ -437,6 +449,7 @@ ul.tags li a.tag:hover {
   margin-bottom: 20px;
   overflow: hidden;
 }
+
 .data-menu ul {
   overflow: hidden;
   float: left;
@@ -465,7 +478,7 @@ ul.tags li a.tag:hover {
 
 .content__data ul li,
 .content__project ul li {
-  padding: 0 20px;
+  padding: 0 10px;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
@@ -476,6 +489,12 @@ ul.tags li a.tag:hover {
 .content__project ul li a {
   color: $data-text-color;
   text-decoration: none;
+  font-size: 16px;
+}
+
+.content__data ul li a:hover,
+.content__project ul li a:hover {
+  color: #68686A;
 }
 
 .content__data ul li.first,
@@ -493,6 +512,7 @@ a.button {
   background-color: $link-color;
   border-radius: 4px;
   text-decoration: none;
+  font-size: 15px;
 }
 
 a.button:hover {
@@ -517,6 +537,10 @@ a.button:hover {
   display: block;
 }
 
+.data-box h3 a:hover {
+  color: #808184;
+}
+
 .data-box a {
   text-decoration: none;
 }
@@ -532,12 +556,12 @@ a.button:hover {
 }
 
 .data-box p.data-content {
-  font-size: 14px;
+  font-size: 13px;
   color: $data-text-color;
   border-top: 1px solid #e2e2e2;;
-  padding: 8px 10px 10px 10px;
-  margin-top: 10px;
-  margin-bottom: 0px;
+  padding: 5px 10px 0px 10px;
+  margin-top: 5px;
+  margin-bottom: -5px;
 }
 
 .data-box p.data-count {
@@ -545,7 +569,13 @@ a.button:hover {
   color: $data-text-color;
   text-align: right;
   padding-right: 10px;
-  padding-bottom: 10px;
+  margin-bottom: -5px;
+}
+
+.ckanext-pages-content h3 {
+  margin-bottom: 0px;
+  margin-top: 20px;
+
 }
 
 /*****FOOTER*****/
