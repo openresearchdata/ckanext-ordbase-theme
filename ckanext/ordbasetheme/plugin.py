@@ -82,12 +82,12 @@ def get_ordbasetheme_config(option):
     return config.get('ckan.ordbasetheme.' + option, False)
 
 def remove_facets(facets_dict, facets_to_remove):
-    new_facets = collections.OrderedDict()
-    for key in facets_dict.keys():
-        if key in facets_to_remove:
-            continue
-        new_facets[key] = facets_dict[key]
-    return new_facets
+    for facet in facets_to_remove:
+        try:
+            del facets_dict[facet]
+        except KeyError:
+            pass
+    return facets_dict
 
 
 class OrdBaseThemePlugin(plugins.SingletonPlugin, tk.DefaultDatasetForm):
