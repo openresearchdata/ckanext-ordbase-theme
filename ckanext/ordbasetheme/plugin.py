@@ -4,7 +4,6 @@ from pylons import config
 
 import ckan.plugins as plugins
 import ckan.plugins.toolkit as tk
-import collections
 
 
 def get_biggest_groups(n):
