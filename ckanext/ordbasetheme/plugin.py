@@ -4,6 +4,7 @@ from pylons import config
 
 import ckan.plugins as plugins
 import ckan.plugins.toolkit as tk
+import collections
 
 
 def get_biggest_groups(n):
@@ -80,11 +81,20 @@ def get_ordbasetheme_config(option):
     # isn't in the config file.
     return config.get('ckan.ordbasetheme.' + option, False)
 
+def remove_facet(facets_dict, facets_to_remove):
+    new_facets = collections.OrderedDict()
+    for key in facets_dict.keys():
+        if key in facets_to_remove:
+            continue
+        new_facets[key] = facets_dict[key]
+    return new_facets
+
 
 class OrdBaseThemePlugin(plugins.SingletonPlugin, tk.DefaultDatasetForm):
 
     plugins.implements(plugins.IConfigurer, inherit=False)
     plugins.implements(plugins.ITemplateHelpers, inherit=False)
+    plugins.implements(plugins.IFacets)
 
     def update_config(self, config):
         tk.add_template_directory(config, 'templates')
@@ -109,3 +119,14 @@ class OrdBaseThemePlugin(plugins.SingletonPlugin, tk.DefaultDatasetForm):
             'get_newest_datasets': get_newest_datasets,
             'get_ordbasetheme_config': get_ordbasetheme_config
         }
+
+    #IFacets functions
+    # Remove organization from faceted search
+    def dataset_facets(self, facets_dict, package_type):
+        return remove_facet(facets_dict, ['organization'])
+
+    def group_facets(self, facets_dict, package_type):
+        return remove_facet(facets_dict, ['organization'])
+
+    def organization_facets(self, facets_dict, package_type):
+        return remove_facet(facets_dict, ['organization'])
