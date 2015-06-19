@@ -10,7 +10,7 @@
         {% if h.get_ordbasetheme_config('enable_language_nav') == 'true' %}
           {% set current_url = request.environ.CKAN_CURRENT_URL %}
             <ul>
-              <li><a href="/en{{ current_url }}">en</a></li>
+              <li><a href="/en_GB{{ current_url }}">en</a></li>
               <li><a href="/de{{ current_url }}">de</a></li>
               <li><a href="/fr{{ current_url }}">fr</a></li>
             </ul>
