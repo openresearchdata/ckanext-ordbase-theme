@@ -13,7 +13,8 @@
 
 .header__content-topmenu ul li a,
 .header__content-metamenu ul li a {
-  color: #ffffff; }
+  color: #ffffff;
+  font-weight: normal; }
 
 .header__content h3 {
   color: #ffffff; }
