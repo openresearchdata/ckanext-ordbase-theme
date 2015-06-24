@@ -6,8 +6,10 @@ $header-bg-color: #303030;
 $header-text-color: #c4c3c5;
 $toolbar-text-color: #434343;
 $data-text-color: #808184;
+$data-link-hover-color: #434343;
 $footer-bg-color: $header-bg-color;
 $footer-text-color: #a1a1a1;
+$footer-hover-color: darken($footer-text-color, 5%);
 
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -68,10 +70,6 @@ body {
 }
 
 .module-content a.dropdown-toggle {
-  color: #fff;
-}
-
-.module-content .follow_button a {
   color: #fff;
 }
 
@@ -263,7 +261,6 @@ ul.tags li a.tag:hover {
 
 .header__top-link a {
   color: #fff;
-  text-decoration: underline;
 }
 
 .header__top-link a:hover {
@@ -300,10 +297,9 @@ ul.tags li a.tag:hover {
 .header__content-metamenu ul li {
   float: left;
   padding: 5px 12px;
-  border-left: 2px solid $brand-color;
+  border-left: 2px solid $link-color;
   color: $toolbar-text-color;
   font-size: 16px;
-  font-weight: bold;
   margin-top: 20px;
 }
 
@@ -315,12 +311,12 @@ ul.tags li a.tag:hover {
 
 .header__content-topmenu ul li a:hover,
 .header__content-metamenu ul li a:hover {
-  color: #68686A;
+  color: $hover-color;
 }
 
 .header__content-topmenu ul li:last-child,
 .header__content-metamenu ul li:last-child {
-  border-right: 2px solid $brand-color;
+  border-right: 2px solid $link-color;
 }
 
 .header__content h3 {
@@ -460,8 +456,11 @@ ul.tags li a.tag:hover {
   display: block;
 }
 
-.data-menu li.active a {
-  color: #434343;
+.data-menu li.active a,
+.data-menu li a:hover,
+.content__data ul li a:hover,
+.content__project ul li a:hover {
+  color: $data-link-hover-color;
 }
 
 .content__data,
@@ -490,11 +489,6 @@ ul.tags li a.tag:hover {
   color: $data-text-color;
   text-decoration: none;
   font-size: 16px;
-}
-
-.content__data ul li a:hover,
-.content__project ul li a:hover {
-  color: #68686A;
 }
 
 .content__data ul li.first,
@@ -531,14 +525,14 @@ a.button:hover {
 
 .data-box h3 a {
   margin: 0px;
-  color: #434343;
+  color: $data-link-hover-color;
   font-size: 16px;
   padding: 0px 10px 0px 10px;
   display: block;
 }
 
 .data-box h3 a:hover {
-  color: #808184;
+  color: $data-text-color;
 }
 
 .data-box a {
@@ -558,7 +552,7 @@ a.button:hover {
 .data-box p.data-content {
   font-size: 13px;
   color: $data-text-color;
-  border-top: 1px solid #e2e2e2;;
+  border-top: 1px solid #e2e2e2;
   padding: 5px 10px 0px 10px;
   margin-top: 5px;
   margin-bottom: -5px;
@@ -603,7 +597,7 @@ footer .container {
 }
 
 .footer__links ul li a:hover {
-  text-decoration: underline;
+  color: $footer-hover-color;
 }
 
 .footer__text ul {
@@ -624,7 +618,8 @@ footer .container {
 }
 
 .footer__text p a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: $footer-hover-color;
 }
 
 .footer-mandated img {

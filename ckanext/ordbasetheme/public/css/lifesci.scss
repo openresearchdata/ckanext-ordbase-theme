@@ -70,6 +70,11 @@ ul.tags li a.tag:hover {
   border-right-color: $brand-color;
 }
 
+.header__content-topmenu ul li a:hover,
+.header__content-metamenu ul li a:hover {
+  color: $hover-color;
+}
+
 .logo-title h1 {
   color: $brand-color;
 }

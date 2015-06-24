@@ -52,9 +52,6 @@ body {
 .module-content a.dropdown-toggle {
   color: #fff; }
 
-.module-content .follow_button a {
-  color: #fff; }
-
 .module-content .btn {
   color: #C21700;
   border: none;
@@ -210,8 +207,7 @@ ul.tags li a.tag:hover {
   margin-bottom: 0; }
 
 .header__top-link a {
-  color: #fff;
-  text-decoration: underline; }
+  color: #fff; }
 
 .header__top-link a:hover {
   text-decoration: none; }
@@ -242,10 +238,9 @@ ul.tags li a.tag:hover {
 .header__content-metamenu ul li {
   float: left;
   padding: 5px 12px;
-  border-left: 2px solid #ffffff;
+  border-left: 2px solid #C21700;
   color: #434343;
   font-size: 16px;
-  font-weight: bold;
   margin-top: 20px; }
 
 .header__content-topmenu ul li a,
@@ -255,11 +250,11 @@ ul.tags li a.tag:hover {
 
 .header__content-topmenu ul li a:hover,
 .header__content-metamenu ul li a:hover {
-  color: #68686A; }
+  color: #a91400; }
 
 .header__content-topmenu ul li:last-child,
 .header__content-metamenu ul li:last-child {
-  border-right: 2px solid #ffffff; }
+  border-right: 2px solid #C21700; }
 
 .header__content h3 {
   margin: 0px;
@@ -376,7 +371,10 @@ ul.tags li a.tag:hover {
 .container .tab-content {
   display: block; }
 
-.data-menu li.active a {
+.data-menu li.active a,
+.data-menu li a:hover,
+.content__data ul li a:hover,
+.content__project ul li a:hover {
   color: #434343; }
 
 .content__data,
@@ -402,10 +400,6 @@ ul.tags li a.tag:hover {
   color: #808184;
   text-decoration: none;
   font-size: 16px; }
-
-.content__data ul li a:hover,
-.content__project ul li a:hover {
-  color: #68686A; }
 
 .content__data ul li.first,
 .content__project ul li.first {
@@ -495,7 +489,7 @@ footer .container {
   text-decoration: none; }
 
 .footer__links ul li a:hover {
-  text-decoration: underline; }
+  color: #949494; }
 
 .footer__text ul {
   list-style-type: none;
@@ -512,7 +506,8 @@ footer .container {
   font-weight: bold; }
 
 .footer__text p a:hover {
-  text-decoration: underline; }
+  text-decoration: none;
+  color: #949494; }
 
 .footer-mandated img {
   width: 140px;

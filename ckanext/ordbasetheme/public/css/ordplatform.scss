@@ -1,4 +1,5 @@
 $toolbar-text-color: #ffffff;
+$toolbar-border-color: #C21700;
 
 [role=main], .main {
   background-image: url("/images/pattern3.jpg");
@@ -14,13 +15,6 @@ $toolbar-text-color: #ffffff;
 .header__content-topmenu ul li,
 .header__content-metamenu ul li {
   color: $toolbar-text-color;
-  font-weight: normal;
-  border-left: 2px solid #C21700;
-}
-
-.header__content-topmenu ul li:last-child,
-.header__content-metamenu ul li:last-child {
-  border-right: 2px solid #C21700;
 }
 
 .header__content-topmenu ul li a,
@@ -44,35 +38,35 @@ $toolbar-text-color: #ffffff;
   float:right;
   position:relative;
   left:-50%;
-}
 
-.header__platform-links ul {
-  list-style-type: none;
-  overflow: hidden;
-  margin-left: 0;
-  margin-bottom: 0px;
-  position:relative;
-  left:50%;
-}
+  ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin-left: 0;
+    margin-bottom: 0px;
+    position:relative;
+    left:50%;
 
-.header__platform-links ul li {
-  border-left: 1px solid #C21700;
-  float: left;
-  padding: 5px 12px;
-  margin-top: 0px;
-  line-height: 8px;
-}
+    li {
+      border-left: 1px solid $toolbar-border-color;
+      float: left;
+      padding: 5px 12px;
+      margin-top: 0px;
+      line-height: 8px;
 
-.header__platform-links ul li:first-child {
-  border-left: none;
-}
+      &:first-child {
+        border-left: none;
+      }
 
-.header__platform-links ul li a {
-  color: #808184;
-  font-size: 13px;
-}
+      a {
+        color: #808184;
+        font-size: 13px;
 
-.header__platform-links ul li a:hover {
-  text-decoration: none;
-  color: #BEBFC0;
+        &:hover {
+          text-decoration: none;
+          color: #BEBFC0;
+        }
+      }
+    }
+  }
 }
