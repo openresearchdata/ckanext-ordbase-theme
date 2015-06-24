@@ -56,10 +56,6 @@ body {
   border-right: 1px solid #ccc;
 }
 
-.nav > li > a:hover, .nav > li > a:focus {
-  background-color: $hover-color;
-}
-
 .module-content a {
   color: $link-color;
 }
@@ -284,6 +280,7 @@ ul.tags li a.tag:hover {
 .header__content {
   background-image: url("/images/pattern1.jpg");
   background-size: 40px;
+  padding-top: 15px;
   padding-bottom: 30px;
 }
 
@@ -329,7 +326,7 @@ ul.tags li a.tag:hover {
 
 .logo-title {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
   padding-left: 0px !important;
 }
 
