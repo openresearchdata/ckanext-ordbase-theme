@@ -238,7 +238,7 @@ ul.tags li a.tag:hover {
 .header__content-metamenu ul li {
   float: left;
   padding: 5px 12px;
-  border-left: 2px solid #C21700;
+  border-left: 2px solid #ffffff;
   color: #434343;
   font-size: 16px;
   margin-top: 20px; }
@@ -255,7 +255,7 @@ ul.tags li a.tag:hover {
 
 .header__content-topmenu ul li:last-child,
 .header__content-metamenu ul li:last-child {
-  border-right: 2px solid #C21700; }
+  border-right: 2px solid #ffffff; }
 
 .header__content h3 {
   margin: 0px;
@@ -353,6 +353,32 @@ ul.tags li a.tag:hover {
   background-color: #a91400;
   border-color: #a91400;
   color: #FFF; }
+
+.header__platform-links {
+  float: right;
+  position: relative;
+  left: -50%; }
+  .header__platform-links ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin-left: 0;
+    margin-bottom: 0px;
+    position: relative;
+    left: 50%; }
+    .header__platform-links ul li {
+      border-left: 1px solid #c4c3c5;
+      float: left;
+      padding: 5px 12px;
+      margin-top: 0px;
+      line-height: 8px; }
+      .header__platform-links ul li:first-child {
+        border-left: none; }
+      .header__platform-links ul li a {
+        color: #c4c3c5;
+        font-size: 13px; }
+        .header__platform-links ul li a:hover {
+          text-decoration: none;
+          color: #ffffff; }
 
 /*****CONTENT*****/
 .content {

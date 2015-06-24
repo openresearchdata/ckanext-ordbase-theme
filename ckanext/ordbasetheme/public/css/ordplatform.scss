@@ -2,10 +2,10 @@ $toolbar-text-color: #ffffff;
 $toolbar-border-color: #C21700;
 
 [role=main], .main {
-  background-image: url("/images/pattern3.jpg");
+  background-image: url("/images/pattern2.jpg");
 }
 .header__content {
-  background-image: url("/images/pattern3.jpg");
+  background-image: url("/images/pattern2.jpg");
 }
 
 .header__content-claim p {
@@ -33,41 +33,4 @@ $toolbar-border-color: #C21700;
 
 .header__content-topmenu ul li a:hover, .header__content-metamenu ul li a:hover {
   color: #B3B3B3;
-}
-
-.header__platform-links {
-  float:right;
-  position:relative;
-  left:-50%;
-
-  ul {
-    list-style-type: none;
-    overflow: hidden;
-    margin-left: 0;
-    margin-bottom: 0px;
-    position:relative;
-    left:50%;
-
-    li {
-      border-left: 1px solid $toolbar-border-color;
-      float: left;
-      padding: 5px 12px;
-      margin-top: 0px;
-      line-height: 8px;
-
-      &:first-child {
-        border-left: none;
-      }
-
-      a {
-        color: #808184;
-        font-size: 13px;
-
-        &:hover {
-          text-decoration: none;
-          color: #BEBFC0;
-        }
-      }
-    }
-  }
 }

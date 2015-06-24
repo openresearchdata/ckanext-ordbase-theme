@@ -297,7 +297,7 @@ ul.tags li a.tag:hover {
 .header__content-metamenu ul li {
   float: left;
   padding: 5px 12px;
-  border-left: 2px solid $link-color;
+  border-left: 2px solid $brand-color;
   color: $toolbar-text-color;
   font-size: 16px;
   margin-top: 20px;
@@ -317,7 +317,7 @@ ul.tags li a.tag:hover {
 
 .header__content-topmenu ul li:last-child,
 .header__content-metamenu ul li:last-child {
-  border-right: 2px solid $link-color;
+  border-right: 2px solid $brand-color;
 }
 
 .header__content h3 {
@@ -433,6 +433,43 @@ ul.tags li a.tag:hover {
   background-color: $hover-color;
   border-color: $hover-color;
   color: #FFF;
+}
+
+.header__platform-links {
+  float:right;
+  position:relative;
+  left:-50%;
+
+  ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin-left: 0;
+    margin-bottom: 0px;
+    position:relative;
+    left:50%;
+
+    li {
+      border-left: 1px solid $header-text-color;
+      float: left;
+      padding: 5px 12px;
+      margin-top: 0px;
+      line-height: 8px;
+
+      &:first-child {
+        border-left: none;
+      }
+
+      a {
+        color: $header-text-color;
+        font-size: 13px;
+
+        &:hover {
+          text-decoration: none;
+          color: #ffffff;
+        }
+      }
+    }
+  }
 }
 
 /*****CONTENT*****/
