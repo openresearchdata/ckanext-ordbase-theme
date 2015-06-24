@@ -3,13 +3,13 @@ $hover-color: darken($link-color, 5%);
 $brand-color: #ffffff;
 $color-danger: #da4f49;
 $header-bg-color: #303030;
-$header-text-color: #c4c3c5;
+$header-text-color: #cccccc;
 $toolbar-text-color: #434343;
 $data-text-color: #808184;
 $data-link-hover-color: #434343;
 $footer-bg-color: $header-bg-color;
 $footer-text-color: #a1a1a1;
-$footer-hover-color: darken($footer-text-color, 5%);
+$footer-hover-color: darken(#ffffff, 20%);
 
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {

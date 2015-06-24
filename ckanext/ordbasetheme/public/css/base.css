@@ -186,7 +186,7 @@ ul.tags li a.tag:hover {
   float: left;
   margin-right: 10px;
   line-height: 32px;
-  color: #c4c3c5;
+  color: #cccccc;
   font-size: 14px;
   text-decoration: none; }
 
@@ -202,7 +202,7 @@ ul.tags li a.tag:hover {
   text-align: center; }
 
 .header__top-link p {
-  color: #c4c3c5;
+  color: #cccccc;
   line-height: 32px;
   margin-bottom: 0; }
 
@@ -366,7 +366,7 @@ ul.tags li a.tag:hover {
     position: relative;
     left: 50%; }
     .header__platform-links ul li {
-      border-left: 1px solid #c4c3c5;
+      border-left: 1px solid #cccccc;
       float: left;
       padding: 5px 12px;
       margin-top: 0px;
@@ -374,7 +374,7 @@ ul.tags li a.tag:hover {
       .header__platform-links ul li:first-child {
         border-left: none; }
       .header__platform-links ul li a {
-        color: #c4c3c5;
+        color: #cccccc;
         font-size: 13px; }
         .header__platform-links ul li a:hover {
           text-decoration: none;
@@ -516,7 +516,7 @@ footer .container {
   text-decoration: none; }
 
 .footer__links ul li a:hover {
-  color: #949494; }
+  color: #cccccc; }
 
 .footer__text ul {
   list-style-type: none;
@@ -534,7 +534,7 @@ footer .container {
 
 .footer__text p a:hover {
   text-decoration: none;
-  color: #949494; }
+  color: #cccccc; }
 
 .footer-mandated img {
   width: 140px;
