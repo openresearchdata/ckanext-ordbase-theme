@@ -8,8 +8,10 @@
   <div class="grid">
     <div class="grid__col grid__col--1-of-4 header__content-topmenu toolbar-nav-left">
       <ul>
-        <li><a href="{% url_for('search') %}">{{ _('Datasets') }}</a></li>
-        <li><a href="{% url_for('group_index') %}">{{ _('Projects') }}</a></li>
+        {{ h.build_nav_main(
+          ('search', _('Datasets')),
+          ('group_index', _('Projects')),
+        ) }}
       </ul>
     </div>
     <div class="grid__col grid__col--1-of-4 header__content-topmenu toolbar-title">
