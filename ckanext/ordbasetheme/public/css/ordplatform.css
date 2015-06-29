@@ -9,14 +9,21 @@
 
 .header__content-topmenu ul li,
 .header__content-metamenu ul li {
-  color: #ffffff;
-  font-weight: normal; }
+  color: #ffffff; }
 
 .header__content-topmenu ul li a,
 .header__content-metamenu ul li a {
-  color: #ffffff; }
+  color: #ffffff;
+  font-weight: normal; }
+
+.header__content-topmenu ul li a:hover,
+.header__content-metamenu ul li a:hover {
+  color: #cccccc; }
 
 .header__content h3 {
   color: #ffffff; }
+
+.header__top {
+  background-color: #000; }
 
 /*# sourceMappingURL=ordplatform.css.map */

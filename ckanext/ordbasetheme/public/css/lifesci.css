@@ -1,6 +1,3 @@
-.nav > li > a:hover, .nav > li > a:focus {
-  background-color: #04655d; }
-
 .module-content a {
   color: #06968A; }
 
@@ -55,6 +52,10 @@ ul.tags li a.tag:hover {
 .header__content-topmenu ul li:last-child,
 .header__content-metamenu ul li:last-child {
   border-right-color: #06968A; }
+
+.header__content-topmenu ul li a:hover,
+.header__content-metamenu ul li a:hover {
+  color: #04655d; }
 
 .logo-title h1 {
   color: #06968A; }

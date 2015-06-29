@@ -1,4 +1,4 @@
-$toolbar-text-color: #ffffff;
+$header-text-color: #ffffff;
 
 [role=main], .main {
   background-image: url("/images/pattern2.jpg");
@@ -8,20 +8,29 @@ $toolbar-text-color: #ffffff;
 }
 
 .header__content-claim p {
-  color: $toolbar-text-color;
+  color: $header-text-color;
 }
 
 .header__content-topmenu ul li,
 .header__content-metamenu ul li {
-  color: $toolbar-text-color;
-  font-weight: normal;
+  color: $header-text-color;
 }
 
 .header__content-topmenu ul li a,
 .header__content-metamenu ul li a {
-  color: $toolbar-text-color;
+  color: $header-text-color;
+  font-weight: normal;
+}
+
+.header__content-topmenu ul li a:hover,
+.header__content-metamenu ul li a:hover {
+  color: darken($header-text-color, 20%);
 }
 
 .header__content h3 {
-  color: $toolbar-text-color;
+  color: $header-text-color;
+}
+
+.header__top {
+  background-color: #000;
 }

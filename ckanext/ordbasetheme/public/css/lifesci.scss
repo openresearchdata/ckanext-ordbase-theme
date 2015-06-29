@@ -2,10 +2,6 @@ $link-color: #06968A;
 $hover-color: darken($link-color, 10%);
 $brand-color: $link-color;
 
-.nav > li > a:hover, .nav > li > a:focus {
-  background-color: $hover-color;
-}
-
 .module-content a {
   color: $link-color;
 }
@@ -68,6 +64,11 @@ ul.tags li a.tag:hover {
 .header__content-topmenu ul li:last-child,
 .header__content-metamenu ul li:last-child {
   border-right-color: $brand-color;
+}
+
+.header__content-topmenu ul li a:hover,
+.header__content-metamenu ul li a:hover {
+  color: $hover-color;
 }
 
 .logo-title h1 {

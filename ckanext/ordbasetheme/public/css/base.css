@@ -39,9 +39,6 @@ body {
 .module-heading {
   border-right: 1px solid #ccc; }
 
-.nav > li > a:hover, .nav > li > a:focus {
-  background-color: #a91400; }
-
 .module-content a {
   color: #C21700; }
 
@@ -50,9 +47,6 @@ body {
   color: #a91400; }
 
 .module-content a.dropdown-toggle {
-  color: #fff; }
-
-.module-content .follow_button a {
   color: #fff; }
 
 .module-content .btn {
@@ -189,9 +183,12 @@ ul.tags li a.tag:hover {
   float: left;
   margin-right: 10px;
   line-height: 32px;
-  color: #c4c3c5;
+  color: #cccccc;
   font-size: 14px;
   text-decoration: none; }
+
+.header__top-language ul li a:hover {
+  color: #fff; }
 
 .header__top-language ul li:last-child {
   border-right: none; }
@@ -202,13 +199,12 @@ ul.tags li a.tag:hover {
   text-align: center; }
 
 .header__top-link p {
-  color: #c4c3c5;
+  color: #cccccc;
   line-height: 32px;
   margin-bottom: 0; }
 
 .header__top-link a {
-  color: #fff;
-  text-decoration: underline; }
+  color: #fff; }
 
 .header__top-link a:hover {
   text-decoration: none; }
@@ -228,6 +224,7 @@ ul.tags li a.tag:hover {
 .header__content {
   background-image: url("/images/pattern1.jpg");
   background-size: 40px;
+  padding-top: 15px;
   padding-bottom: 30px; }
 
 .header__content-topmenu ul {
@@ -242,17 +239,17 @@ ul.tags li a.tag:hover {
   border-left: 2px solid #ffffff;
   color: #434343;
   font-size: 16px;
-  font-weight: bold;
   margin-top: 20px; }
 
 .header__content-topmenu ul li a,
 .header__content-metamenu ul li a {
   color: #434343;
-  text-decoration: none; }
+  text-decoration: none;
+  font-weight: bold; }
 
 .header__content-topmenu ul li a:hover,
 .header__content-metamenu ul li a:hover {
-  text-decoration: underline; }
+  color: #a91400; }
 
 .header__content-topmenu ul li:last-child,
 .header__content-metamenu ul li:last-child {
@@ -266,18 +263,18 @@ ul.tags li a.tag:hover {
 
 .logo-title {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
   padding-left: 0px !important; }
 
 .logo-title img {
-  width: 160px; }
+  height: 160px; }
 
 .logo-title h1 {
   color: #ffffff;
   margin-top: 10px;
   margin-bottom: 0px;
   font-weight: normal;
-  font-size: 36px; }
+  font-size: 30px; }
 
 .header__content-metamenu ul {
   list-style-type: none;
@@ -333,7 +330,7 @@ ul.tags li a.tag:hover {
 .content__data ul.tags li {
   margin-right: 5px;
   display: inline;
-  line-height: 30px;
+  line-height: 24px;
   padding-left: 0px;
   padding-right: 0px; }
 
@@ -355,6 +352,32 @@ ul.tags li a.tag:hover {
   border-color: #a91400;
   color: #FFF; }
 
+.header__platform-links {
+  float: right;
+  position: relative;
+  left: -50%; }
+  .header__platform-links ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin-left: 0;
+    margin-bottom: 0px;
+    position: relative;
+    left: 50%; }
+    .header__platform-links ul li {
+      border-left: 1px solid #cccccc;
+      float: left;
+      padding: 5px 12px;
+      margin-top: 0px;
+      line-height: 8px; }
+      .header__platform-links ul li:first-child {
+        border-left: none; }
+      .header__platform-links ul li a {
+        color: #cccccc;
+        font-size: 13px; }
+        .header__platform-links ul li a:hover {
+          text-decoration: none;
+          color: #ffffff; }
+
 /*****CONTENT*****/
 .content {
   background-color: #e2e2e2;
@@ -373,7 +396,10 @@ ul.tags li a.tag:hover {
 .container .tab-content {
   display: block; }
 
-.data-menu li.active a {
+.data-menu li.active a,
+.data-menu li a:hover,
+.content__data ul li a:hover,
+.content__project ul li a:hover {
   color: #434343; }
 
 .content__data,
@@ -388,7 +414,7 @@ ul.tags li a.tag:hover {
 
 .content__data ul li,
 .content__project ul li {
-  padding: 0 20px;
+  padding: 0 10px;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
@@ -397,7 +423,8 @@ ul.tags li a.tag:hover {
 .content__data ul li a,
 .content__project ul li a {
   color: #808184;
-  text-decoration: none; }
+  text-decoration: none;
+  font-size: 16px; }
 
 .content__data ul li.first,
 .content__project ul li.first {
@@ -411,7 +438,8 @@ a.button {
   padding: 10px 15px;
   background-color: #C21700;
   border-radius: 4px;
-  text-decoration: none; }
+  text-decoration: none;
+  font-size: 15px; }
 
 a.button:hover {
   background-color: #a91400; }
@@ -431,6 +459,9 @@ a.button:hover {
   padding: 0px 10px 0px 10px;
   display: block; }
 
+.data-box h3 a:hover {
+  color: #808184; }
+
 .data-box a {
   text-decoration: none; }
 
@@ -444,19 +475,23 @@ a.button:hover {
   margin-bottom: 0px; }
 
 .data-box p.data-content {
-  font-size: 14px;
+  font-size: 13px;
   color: #808184;
   border-top: 1px solid #e2e2e2;
-  padding: 8px 10px 10px 10px;
-  margin-top: 10px;
-  margin-bottom: 0px; }
+  padding: 5px 10px 0px 10px;
+  margin-top: 5px;
+  margin-bottom: -5px; }
 
 .data-box p.data-count {
   font-size: 12px;
   color: #808184;
   text-align: right;
   padding-right: 10px;
-  padding-bottom: 10px; }
+  margin-bottom: -5px; }
+
+.ckanext-pages-content h3 {
+  margin-bottom: 0px;
+  margin-top: 20px; }
 
 /*****FOOTER*****/
 footer {
@@ -479,7 +514,7 @@ footer .container {
   text-decoration: none; }
 
 .footer__links ul li a:hover {
-  text-decoration: underline; }
+  color: #cccccc; }
 
 .footer__text ul {
   list-style-type: none;
@@ -496,7 +531,8 @@ footer .container {
   font-weight: bold; }
 
 .footer__text p a:hover {
-  text-decoration: underline; }
+  text-decoration: none;
+  color: #cccccc; }
 
 .footer-mandated img {
   width: 140px;
