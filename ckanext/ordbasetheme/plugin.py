@@ -124,8 +124,8 @@ class OrdBaseThemePlugin(plugins.SingletonPlugin, tk.DefaultDatasetForm):
     def dataset_facets(self, facets_dict, package_type):
         return remove_facets(facets_dict, ['organization'])
 
-    def group_facets(self, facets_dict, package_type):
+    def group_facets(self, facets_dict, group_type, package_type):
         return remove_facets(facets_dict, ['organization'])
 
-    def organization_facets(self, facets_dict, package_type):
+    def organization_facets(self, facets_dict, organization_type, package_type):
         return remove_facets(facets_dict, ['organization'])
